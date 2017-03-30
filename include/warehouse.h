@@ -13,7 +13,7 @@ class Warehouse {
  public:
   Warehouse(int workers_count);
   /**
-   * @brief wait Waits untill all the requests are handled.
+   * @brief wait Waits until all the requests are handled.
    */
   void wait();
 
