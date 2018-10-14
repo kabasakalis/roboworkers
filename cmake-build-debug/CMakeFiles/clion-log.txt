@@ -1,0 +1,4 @@
+/opt/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/spiros/cpp/roboworkers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/spiros/cpp/roboworkers/cmake-build-debug

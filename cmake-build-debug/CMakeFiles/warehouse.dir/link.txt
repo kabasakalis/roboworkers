@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread -g  -rdynamic CMakeFiles/warehouse.dir/src/backoffice.cpp.o CMakeFiles/warehouse.dir/src/main.cpp.o CMakeFiles/warehouse.dir/src/warehouse.cpp.o  -o warehouse 

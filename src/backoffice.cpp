@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <exception>
+#include <iostream>
 #include <boost/algorithm/string.hpp>
 #include <boost/lexical_cast.hpp>
 

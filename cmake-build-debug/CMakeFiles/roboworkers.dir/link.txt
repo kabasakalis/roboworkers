@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread -g  -rdynamic CMakeFiles/roboworkers.dir/src/backoffice.cpp.o CMakeFiles/roboworkers.dir/src/identifiable.cpp.o CMakeFiles/roboworkers.dir/src/main.cpp.o CMakeFiles/roboworkers.dir/src/product.cpp.o CMakeFiles/roboworkers.dir/src/warehouse.cpp.o  -o roboworkers 

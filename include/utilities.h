@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
+#include <iostream>
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_io.hpp>
 #include <boost/uuid/uuid_generators.hpp>
@@ -20,7 +21,7 @@ inline std::string getUUID() {
 /**
  * @brief getUniform Returns a uniformly destributed random integer in [from,to)
  */
-inline int getUniform(int from, int to) { return rand() % to + from; }
+inline int getUniform(short from, int to) { return rand() % to + from; }
 
 /**
  * @brief getTimestamp Returns the current timestamp
