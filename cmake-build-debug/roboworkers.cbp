@@ -103,6 +103,9 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/move.h">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/operation.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/operation_type.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -152,9 +155,6 @@
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/operation.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/operation.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/package.cpp">

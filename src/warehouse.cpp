@@ -18,7 +18,8 @@ void Warehouse::onNewRequests(std::vector<Request> &new_requests) {
 
 
   for (Request &r : new_requests) {
-    std::cout << r.operation_ << "," << r.product_ << " ";
+      r.get_operation().process();
+//    std::cout << r.operation_ << "," << r.product_ << " ";
   }
   std::cout << std::endl;
 

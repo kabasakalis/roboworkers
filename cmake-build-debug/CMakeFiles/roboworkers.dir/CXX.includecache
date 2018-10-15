@@ -46,7 +46,23 @@ task.h
 unordered_map
 -
 
-../include/operation_type.h
+../include/operation.h
+utilities.h
+-
+product.h
+-
+timestampable.h
+-
+deque
+-
+lift.h
+-
+move.h
+-
+putdown.h
+-
+package.h
+-
 
 ../include/package.h
 product.h
@@ -73,10 +89,10 @@ unordered_map
 -
 
 ../include/request.h
-product_type.h
-../include/product_type.h
-operation_type.h
-../include/operation_type.h
+product.h
+../include/product.h
+operation.h
+../include/operation.h
 
 ../include/sofa.h
 product.h
@@ -129,6 +145,8 @@ request.h
 /home/spiros/cpp/roboworkers/src/backoffice.cpp
 backoffice.h
 /home/spiros/cpp/roboworkers/src/backoffice.h
+operation.h
+/home/spiros/cpp/roboworkers/src/operation.h
 fstream
 -
 exception
@@ -183,24 +201,6 @@ move.h
 /home/spiros/cpp/roboworkers/src/operation.cpp
 operation.h
 /home/spiros/cpp/roboworkers/src/operation.h
-
-/home/spiros/cpp/roboworkers/src/operation.h
-utilities.h
--
-product.h
--
-timestampable.h
--
-deque
--
-lift.h
--
-move.h
--
-putdown.h
--
-package.h
--
 
 /home/spiros/cpp/roboworkers/src/package.cpp
 package.h

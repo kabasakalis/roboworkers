@@ -18,9 +18,14 @@ int main(int argc, char **argv) {
     using namespace std::placeholders;
     srand(time(NULL));
 
-    Sofa sofa;
-    Chair chair;
+//   Sofa sofa;
+//    Chair chair;
 
+//    Operation inbound(Operation::Type::INBOUND, sofa);
+//    Operation outbound(Operation::Type::DELIVER, chair);
+//
+//    inbound.process();
+//    outbound.process();
 //    Move move("OpID_100", sofa);
 //    Lift lift("OpID_200", chair);
 //    PutDown putDown("OpID_300", chair);
@@ -29,14 +34,6 @@ int main(int argc, char **argv) {
 //    lift.execute();
 //    putDown.execute();
 //    package.execute();
-
-    Operation inbound(Operation::Type::INBOUND, sofa);
-    Operation outbound(Operation::Type::DELIVER, chair);
-
-        inbound.process();
-        outbound.process();
-
-
 //    std::cout << chair.getId() << std::endl;
 //    std::cout << chair.getName() << std::endl;
 //

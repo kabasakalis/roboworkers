@@ -16,41 +16,44 @@ public:
     enum Type {
         INBOUND, DELIVER
     };
+
     Operation(Type type, const Product &product) :
             product_(product), type_(type) {
         switch (type) {
             //LIFT->MOVE->PUT_DOWN->MOVE
             case Type::INBOUND :
-                tasks.emplace_back(Lift(id, product_));
-                tasks.emplace_back(Move(id, product_));
-                tasks.emplace_back(PutDown(id, product_));
-                tasks.emplace_back(Move(id, product_));
+                tasks_.emplace_back(Lift(id, product_));
+                tasks_.emplace_back(Move(id, product_));
+                tasks_.emplace_back(PutDown(id, product_));
+                tasks_.emplace_back(Move(id, product_));
                 break;
             case Type::DELIVER:
                 //MOVE-LIFT-MOVE-PACKAGE-MOVE-PUT_DOWN-MOVE
-                tasks.emplace_back(Move(id, product_));
-                tasks.emplace_back(Lift(id, product_));
-                tasks.emplace_back(Move(id, product_));
-                tasks.emplace_back(Package(id, product_));
-                tasks.emplace_back(Move(id, product_));
-                tasks.emplace_back(PutDown(id, product_));
-                tasks.emplace_back(Move(id, product_));
+                tasks_.emplace_back(Move(id, product_));
+                tasks_.emplace_back(Lift(id, product_));
+                tasks_.emplace_back(Move(id, product_));
+                tasks_.emplace_back(Package(id, product_));
+                tasks_.emplace_back(Move(id, product_));
+                tasks_.emplace_back(PutDown(id, product_));
+                tasks_.emplace_back(Move(id, product_));
                 break;
+            default:
+                throw std::runtime_error("Unknown operation type.");
         }
     }
 
     void process() {
         set_start_time();
-        for (auto task : tasks) task.execute();
+        for (auto task : tasks_) task.execute();
         set_finish_time();
         logOperation(id, creation_time, start_time, finish_time);
     };
 
 
-protected:
+private:
     Product product_;
     int type_;
-    std::deque<Task> tasks;
+    std::deque<Task> tasks_;
 };
 
 
