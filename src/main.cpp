@@ -1,8 +1,13 @@
 #include <iostream>
 #include <functional>
 #include <product.h>
-#include <Sofa.h>
+#include <sofa.h>
 #include <chair.h>
+#include <move.h>
+#include <lift.h>
+#include <lift.h>
+#include <package.h>
+#include <putdown.h>
 
 #include "utilities.h"
 #include "backoffice.h"
@@ -12,12 +17,20 @@ int main(int argc, char **argv) {
     using namespace std::placeholders;
     srand(time(NULL));
 
-    Product product;
     Sofa sofa;
     Chair chair;
 
-    std::cout << product.getId() << std::endl;
-    std::cout << product.getName() << std::endl;
+    Move move("OpID_100", sofa);
+    Lift lift("OpID_200", chair);
+    PutDown putDown("OpID_300", chair);
+    Package package("OpID_400", sofa);
+    move.execute();
+    lift.execute();
+    putDown.execute();
+     package.execute();
+
+    std::cout << move.getId() << std::endl;
+
 
     std::cout << chair.getId() << std::endl;
     std::cout << chair.getName() << std::endl;

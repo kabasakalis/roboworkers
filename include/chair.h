@@ -6,10 +6,13 @@
 
 class Chair : public Product {
 public:
-    Chair() : weight_(getUniform(1, 5)) {
-        type = Product::Type::CHAIR;
-        name = stringify(Product::Type::CHAIR);
+    Chair() : Product(Product::Type::CHAIR, stringify(Product::Type::CHAIR)),
+              weight_(getUniform(1, 5)) {
+
+        workloadMultiplier_ = weight_;
     };
+
+    constexpr int getWeight() { return weight_; };
 private:
     int weight_;
 };

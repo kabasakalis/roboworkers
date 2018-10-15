@@ -8,15 +8,22 @@
 
 class Product : public Identifiable {
 public:
-    enum class Type { PRODUCT, SOFA, CHAIR };
-    Product(): type(Product::Type::PRODUCT), name(stringify(Product::Type::PRODUCT)){};
+    enum Type {
+        PRODUCT, SOFA, CHAIR
+    };
+
+    Product(Product::Type productType, const std::string &name) :
+            type_(productType),
+            name_(name) {};
+
+
     virtual std::string getName() const;
     virtual Type getType() const;
-    virtual int getMultiplier() const {return workloadMultiplier;} ;
+    virtual int getWorkloadMultiplier() const { return workloadMultiplier_; };
 protected:
-    Type type;
-    std::string name;
-    int workloadMultiplier;
+    Product::Type type_;
+    std::string name_;
+    int workloadMultiplier_;
 };
 
 

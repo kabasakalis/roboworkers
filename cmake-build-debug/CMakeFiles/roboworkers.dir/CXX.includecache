@@ -28,7 +28,33 @@ string
 utilities.h
 ../include/utilities.h
 
+../include/lift.h
+product.h
+-
+task.h
+-
+sofa.h
+-
+chair.h
+-
+
+../include/move.h
+product.h
+-
+task.h
+-
+unordered_map
+-
+
 ../include/operation_type.h
+
+../include/package.h
+product.h
+-
+task.h
+-
+unordered_map
+-
 
 ../include/product.h
 string
@@ -37,6 +63,14 @@ identifiable.h
 ../include/identifiable.h
 
 ../include/product_type.h
+
+../include/putdown.h
+product.h
+-
+task.h
+-
+unordered_map
+-
 
 ../include/request.h
 product_type.h
@@ -47,6 +81,26 @@ operation_type.h
 ../include/sofa.h
 product.h
 ../include/product.h
+
+../include/task.h
+unordered_map
+-
+map
+-
+identifiable.h
+../include/identifiable.h
+timestampable.h
+../include/timestampable.h
+product.h
+../include/product.h
+unistd.h
+-
+functional
+-
+
+../include/timestampable.h
+utilities.h
+../include/utilities.h
 
 ../include/utilities.h
 string
@@ -88,6 +142,10 @@ boost/lexical_cast.hpp
 
 /home/spiros/cpp/roboworkers/src/identifiable.cpp
 
+/home/spiros/cpp/roboworkers/src/lift.cpp
+lift.h
+/home/spiros/cpp/roboworkers/src/lift.h
+
 /home/spiros/cpp/roboworkers/src/main.cpp
 iostream
 -
@@ -99,6 +157,16 @@ sofa.h
 -
 chair.h
 -
+move.h
+-
+lift.h
+-
+lift.h
+-
+package.h
+-
+putdown.h
+-
 utilities.h
 /home/spiros/cpp/roboworkers/src/utilities.h
 backoffice.h
@@ -106,9 +174,25 @@ backoffice.h
 warehouse.h
 /home/spiros/cpp/roboworkers/src/warehouse.h
 
+/home/spiros/cpp/roboworkers/src/move.cpp
+move.h
+/home/spiros/cpp/roboworkers/src/move.h
+
+/home/spiros/cpp/roboworkers/src/package.cpp
+package.h
+/home/spiros/cpp/roboworkers/src/package.h
+
 /home/spiros/cpp/roboworkers/src/product.cpp
 product.h
 /home/spiros/cpp/roboworkers/src/product.h
+
+/home/spiros/cpp/roboworkers/src/putdown.cpp
+putdown.h
+/home/spiros/cpp/roboworkers/src/putdown.h
+
+/home/spiros/cpp/roboworkers/src/task.cpp
+task.h
+/home/spiros/cpp/roboworkers/src/task.h
 
 /home/spiros/cpp/roboworkers/src/warehouse.cpp
 warehouse.h

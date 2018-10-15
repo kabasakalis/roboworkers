@@ -9,22 +9,70 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../src/backoffice.cpp
 
 CMakeFiles/roboworkers.dir/src/identifiable.cpp.o: ../src/identifiable.cpp
 
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/chair.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/lift.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/product_type.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/sofa.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/lift.cpp.o: ../src/lift.cpp
+
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/backoffice.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/chair.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/lift.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/move.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/operation_type.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/package.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/product_type.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/putdown.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/request.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/sofa.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/timestampable.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/utilities.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/warehouse.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/move.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/move.cpp.o: ../src/move.cpp
+
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/package.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/package.cpp.o: ../src/package.cpp
 
 CMakeFiles/roboworkers.dir/src/product.cpp.o: ../include/identifiable.h
 CMakeFiles/roboworkers.dir/src/product.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/product.cpp.o: ../include/utilities.h
 CMakeFiles/roboworkers.dir/src/product.cpp.o: ../src/product.cpp
+
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/putdown.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../src/putdown.cpp
+
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/task.cpp.o: ../src/task.cpp
 
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/operation_type.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/product_type.h

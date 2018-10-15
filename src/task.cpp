@@ -4,6 +4,5 @@
 
 #include "task.h"
 
-void Task::process(Product p) {
 
-}
+

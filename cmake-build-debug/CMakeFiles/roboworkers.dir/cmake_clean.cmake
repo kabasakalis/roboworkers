@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/roboworkers.dir/src/Move.cpp.o"
   "CMakeFiles/roboworkers.dir/src/backoffice.cpp.o"
   "CMakeFiles/roboworkers.dir/src/identifiable.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/lift.cpp.o"
   "CMakeFiles/roboworkers.dir/src/main.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/move.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/package.cpp.o"
   "CMakeFiles/roboworkers.dir/src/product.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/putdown.cpp.o"
   "CMakeFiles/roboworkers.dir/src/task.cpp.o"
   "CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
   "roboworkers.pdb"

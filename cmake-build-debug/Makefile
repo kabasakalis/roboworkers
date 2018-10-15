@@ -123,33 +123,6 @@ roboworkers/fast:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/build
 .PHONY : roboworkers/fast
 
-src/Move.o: src/Move.cpp.o
-
-.PHONY : src/Move.o
-
-# target to build an object file
-src/Move.cpp.o:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.o
-.PHONY : src/Move.cpp.o
-
-src/Move.i: src/Move.cpp.i
-
-.PHONY : src/Move.i
-
-# target to preprocess a source file
-src/Move.cpp.i:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.i
-.PHONY : src/Move.cpp.i
-
-src/Move.s: src/Move.cpp.s
-
-.PHONY : src/Move.s
-
-# target to generate assembly for a file
-src/Move.cpp.s:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.s
-.PHONY : src/Move.cpp.s
-
 src/backoffice.o: src/backoffice.cpp.o
 
 .PHONY : src/backoffice.o
@@ -204,6 +177,33 @@ src/identifiable.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/identifiable.cpp.s
 .PHONY : src/identifiable.cpp.s
 
+src/lift.o: src/lift.cpp.o
+
+.PHONY : src/lift.o
+
+# target to build an object file
+src/lift.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/lift.cpp.o
+.PHONY : src/lift.cpp.o
+
+src/lift.i: src/lift.cpp.i
+
+.PHONY : src/lift.i
+
+# target to preprocess a source file
+src/lift.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/lift.cpp.i
+.PHONY : src/lift.cpp.i
+
+src/lift.s: src/lift.cpp.s
+
+.PHONY : src/lift.s
+
+# target to generate assembly for a file
+src/lift.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/lift.cpp.s
+.PHONY : src/lift.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -231,6 +231,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/move.o: src/move.cpp.o
+
+.PHONY : src/move.o
+
+# target to build an object file
+src/move.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/move.cpp.o
+.PHONY : src/move.cpp.o
+
+src/move.i: src/move.cpp.i
+
+.PHONY : src/move.i
+
+# target to preprocess a source file
+src/move.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/move.cpp.i
+.PHONY : src/move.cpp.i
+
+src/move.s: src/move.cpp.s
+
+.PHONY : src/move.s
+
+# target to generate assembly for a file
+src/move.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/move.cpp.s
+.PHONY : src/move.cpp.s
+
+src/package.o: src/package.cpp.o
+
+.PHONY : src/package.o
+
+# target to build an object file
+src/package.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/package.cpp.o
+.PHONY : src/package.cpp.o
+
+src/package.i: src/package.cpp.i
+
+.PHONY : src/package.i
+
+# target to preprocess a source file
+src/package.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/package.cpp.i
+.PHONY : src/package.cpp.i
+
+src/package.s: src/package.cpp.s
+
+.PHONY : src/package.s
+
+# target to generate assembly for a file
+src/package.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/package.cpp.s
+.PHONY : src/package.cpp.s
+
 src/product.o: src/product.cpp.o
 
 .PHONY : src/product.o
@@ -257,6 +311,33 @@ src/product.s: src/product.cpp.s
 src/product.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/product.cpp.s
 .PHONY : src/product.cpp.s
+
+src/putdown.o: src/putdown.cpp.o
+
+.PHONY : src/putdown.o
+
+# target to build an object file
+src/putdown.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/putdown.cpp.o
+.PHONY : src/putdown.cpp.o
+
+src/putdown.i: src/putdown.cpp.i
+
+.PHONY : src/putdown.i
+
+# target to preprocess a source file
+src/putdown.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/putdown.cpp.i
+.PHONY : src/putdown.cpp.i
+
+src/putdown.s: src/putdown.cpp.s
+
+.PHONY : src/putdown.s
+
+# target to generate assembly for a file
+src/putdown.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/putdown.cpp.s
+.PHONY : src/putdown.cpp.s
 
 src/task.o: src/task.cpp.o
 
@@ -321,21 +402,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... roboworkers"
-	@echo "... src/Move.o"
-	@echo "... src/Move.i"
-	@echo "... src/Move.s"
 	@echo "... src/backoffice.o"
 	@echo "... src/backoffice.i"
 	@echo "... src/backoffice.s"
 	@echo "... src/identifiable.o"
 	@echo "... src/identifiable.i"
 	@echo "... src/identifiable.s"
+	@echo "... src/lift.o"
+	@echo "... src/lift.i"
+	@echo "... src/lift.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/move.o"
+	@echo "... src/move.i"
+	@echo "... src/move.s"
+	@echo "... src/package.o"
+	@echo "... src/package.i"
+	@echo "... src/package.s"
 	@echo "... src/product.o"
 	@echo "... src/product.i"
 	@echo "... src/product.s"
+	@echo "... src/putdown.o"
+	@echo "... src/putdown.i"
+	@echo "... src/putdown.s"
 	@echo "... src/task.o"
 	@echo "... src/task.i"
 	@echo "... src/task.s"

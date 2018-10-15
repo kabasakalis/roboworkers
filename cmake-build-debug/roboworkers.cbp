@@ -88,9 +88,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/Sofa.h">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/backoffice.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -100,7 +97,13 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/identifiable.h">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/move.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/operation_type.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/package.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/product.h">
@@ -109,7 +112,13 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/product_type.h">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/putdown.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/request.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/sofa.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/task.h">
@@ -124,22 +133,31 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/warehouse.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/Move.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/Move.h">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/backoffice.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/identifiable.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/lift.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/lift.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/main.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/move.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/package.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/product.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/putdown.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/task.cpp">
