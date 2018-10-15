@@ -12,6 +12,7 @@
 #include "utilities.h"
 #include "backoffice.h"
 #include "warehouse.h"
+#include "operation.h"
 
 int main(int argc, char **argv) {
     using namespace std::placeholders;
@@ -20,23 +21,27 @@ int main(int argc, char **argv) {
     Sofa sofa;
     Chair chair;
 
-    Move move("OpID_100", sofa);
-    Lift lift("OpID_200", chair);
-    PutDown putDown("OpID_300", chair);
-    Package package("OpID_400", sofa);
-    move.execute();
-    lift.execute();
-    putDown.execute();
-     package.execute();
+//    Move move("OpID_100", sofa);
+//    Lift lift("OpID_200", chair);
+//    PutDown putDown("OpID_300", chair);
+//    Package package("OpID_400", sofa);
+//    move.execute();
+//    lift.execute();
+//    putDown.execute();
+//    package.execute();
 
-    std::cout << move.getId() << std::endl;
+    Operation inbound(Operation::Type::INBOUND, sofa);
+    Operation outbound(Operation::Type::DELIVER, chair);
+
+        inbound.process();
+        outbound.process();
 
 
-    std::cout << chair.getId() << std::endl;
-    std::cout << chair.getName() << std::endl;
-
-    std::cout << sofa.getId() << std::endl;
-    std::cout << sofa.getName() << std::endl;
+//    std::cout << chair.getId() << std::endl;
+//    std::cout << chair.getName() << std::endl;
+//
+//    std::cout << sofa.getId() << std::endl;
+//    std::cout << sofa.getName() << std::endl;
 
     std::string filename = argc > 1 ? argv[1] : "../data.txt";
     Backoffice backoffice(filename);

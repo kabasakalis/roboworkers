@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/roboworkers.dir/src/lift.cpp.o"
   "CMakeFiles/roboworkers.dir/src/main.cpp.o"
   "CMakeFiles/roboworkers.dir/src/move.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/operation.cpp.o"
   "CMakeFiles/roboworkers.dir/src/package.cpp.o"
   "CMakeFiles/roboworkers.dir/src/product.cpp.o"
   "CMakeFiles/roboworkers.dir/src/putdown.cpp.o"

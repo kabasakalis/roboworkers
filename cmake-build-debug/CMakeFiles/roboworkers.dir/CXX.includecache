@@ -173,10 +173,34 @@ backoffice.h
 /home/spiros/cpp/roboworkers/src/backoffice.h
 warehouse.h
 /home/spiros/cpp/roboworkers/src/warehouse.h
+operation.h
+/home/spiros/cpp/roboworkers/src/operation.h
 
 /home/spiros/cpp/roboworkers/src/move.cpp
 move.h
 /home/spiros/cpp/roboworkers/src/move.h
+
+/home/spiros/cpp/roboworkers/src/operation.cpp
+operation.h
+/home/spiros/cpp/roboworkers/src/operation.h
+
+/home/spiros/cpp/roboworkers/src/operation.h
+utilities.h
+-
+product.h
+-
+timestampable.h
+-
+deque
+-
+lift.h
+-
+move.h
+-
+putdown.h
+-
+package.h
+-
 
 /home/spiros/cpp/roboworkers/src/package.cpp
 package.h

@@ -258,6 +258,33 @@ src/move.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/move.cpp.s
 .PHONY : src/move.cpp.s
 
+src/operation.o: src/operation.cpp.o
+
+.PHONY : src/operation.o
+
+# target to build an object file
+src/operation.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/operation.cpp.o
+.PHONY : src/operation.cpp.o
+
+src/operation.i: src/operation.cpp.i
+
+.PHONY : src/operation.i
+
+# target to preprocess a source file
+src/operation.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/operation.cpp.i
+.PHONY : src/operation.cpp.i
+
+src/operation.s: src/operation.cpp.s
+
+.PHONY : src/operation.s
+
+# target to generate assembly for a file
+src/operation.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/operation.cpp.s
+.PHONY : src/operation.cpp.s
+
 src/package.o: src/package.cpp.o
 
 .PHONY : src/package.o
@@ -417,6 +444,9 @@ help:
 	@echo "... src/move.o"
 	@echo "... src/move.i"
 	@echo "... src/move.s"
+	@echo "... src/operation.o"
+	@echo "... src/operation.i"
+	@echo "... src/operation.s"
 	@echo "... src/package.o"
 	@echo "... src/package.i"
 	@echo "... src/package.s"
