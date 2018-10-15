@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/Sofa.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/backoffice.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -109,7 +112,7 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/request.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/sofa.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/task.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/timestampable.h">
@@ -119,6 +122,12 @@
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/warehouse.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/Move.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/Move.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/backoffice.cpp">
@@ -131,6 +140,9 @@
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/product.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/task.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/warehouse.cpp">

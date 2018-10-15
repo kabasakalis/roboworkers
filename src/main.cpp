@@ -1,7 +1,7 @@
 #include <iostream>
 #include <functional>
 #include <product.h>
-#include <sofa.h>
+#include <Sofa.h>
 #include <chair.h>
 
 #include "utilities.h"
@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
     srand(time(NULL));
 
     Product product;
-    sofa sofa;
+    Sofa sofa;
     Chair chair;
 
     std::cout << product.getId() << std::endl;

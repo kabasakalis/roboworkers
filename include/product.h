@@ -12,9 +12,11 @@ public:
     Product(): type(Product::Type::PRODUCT), name(stringify(Product::Type::PRODUCT)){};
     virtual std::string getName() const;
     virtual Type getType() const;
+    virtual int getMultiplier() const {return workloadMultiplier;} ;
 protected:
     Type type;
     std::string name;
+    int workloadMultiplier;
 };
 
 

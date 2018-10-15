@@ -10,7 +10,7 @@ class Identifiable {
 public:
     Identifiable() : id(getUUID()) {};
     virtual std::string getId() const { return id; };
-private:
+protected:
     std::string id;
 };
 

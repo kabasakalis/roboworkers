@@ -123,6 +123,33 @@ roboworkers/fast:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/build
 .PHONY : roboworkers/fast
 
+src/Move.o: src/Move.cpp.o
+
+.PHONY : src/Move.o
+
+# target to build an object file
+src/Move.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.o
+.PHONY : src/Move.cpp.o
+
+src/Move.i: src/Move.cpp.i
+
+.PHONY : src/Move.i
+
+# target to preprocess a source file
+src/Move.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.i
+.PHONY : src/Move.cpp.i
+
+src/Move.s: src/Move.cpp.s
+
+.PHONY : src/Move.s
+
+# target to generate assembly for a file
+src/Move.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/Move.cpp.s
+.PHONY : src/Move.cpp.s
+
 src/backoffice.o: src/backoffice.cpp.o
 
 .PHONY : src/backoffice.o
@@ -231,6 +258,33 @@ src/product.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/product.cpp.s
 .PHONY : src/product.cpp.s
 
+src/task.o: src/task.cpp.o
+
+.PHONY : src/task.o
+
+# target to build an object file
+src/task.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/task.cpp.o
+.PHONY : src/task.cpp.o
+
+src/task.i: src/task.cpp.i
+
+.PHONY : src/task.i
+
+# target to preprocess a source file
+src/task.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/task.cpp.i
+.PHONY : src/task.cpp.i
+
+src/task.s: src/task.cpp.s
+
+.PHONY : src/task.s
+
+# target to generate assembly for a file
+src/task.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/task.cpp.s
+.PHONY : src/task.cpp.s
+
 src/warehouse.o: src/warehouse.cpp.o
 
 .PHONY : src/warehouse.o
@@ -267,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... roboworkers"
+	@echo "... src/Move.o"
+	@echo "... src/Move.i"
+	@echo "... src/Move.s"
 	@echo "... src/backoffice.o"
 	@echo "... src/backoffice.i"
 	@echo "... src/backoffice.s"
@@ -279,6 +336,9 @@ help:
 	@echo "... src/product.o"
 	@echo "... src/product.i"
 	@echo "... src/product.s"
+	@echo "... src/task.o"
+	@echo "... src/task.i"
+	@echo "... src/task.s"
 	@echo "... src/warehouse.o"
 	@echo "... src/warehouse.i"
 	@echo "... src/warehouse.s"

@@ -4,11 +4,12 @@
 
 #include "product.h"
 
-class sofa : public Product {
+class Sofa : public Product {
 public:
-    sofa():seatsCount_(getUniform(2,5)){
+    Sofa():seatsCount_(getUniform(2,5)){
        type = Product::Type::SOFA;
        name = stringify(Product::Type::SOFA);
+       workloadMultiplier = seatsCount_;
     };
 private:
     int seatsCount_;
