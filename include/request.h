@@ -16,12 +16,12 @@ private:
         switch (product_type) {
             case Product::Type::SOFA : {
                 Sofa sofa;
-                return std::move(sofa);
+                return sofa;
                 break;
             }
             case Product::Type::CHAIR: {
                 Chair chair;
-                return std::move(chair);
+                return chair;
                 break;
             }
             default: {
