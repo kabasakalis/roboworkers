@@ -12,6 +12,7 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/product_type.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/putdown.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/request.h
+CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/request_blocking_queue.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/sofa.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/task.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/timestampable.h
@@ -42,6 +43,8 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/product_type.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/putdown.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/request.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/request_blocking_queue.h
+CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/roboworker.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/sofa.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/task.h
 CMakeFiles/roboworkers.dir/src/main.cpp.o: ../include/timestampable.h
@@ -93,6 +96,43 @@ CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/timestampable.h
 CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../include/utilities.h
 CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../src/putdown.cpp
 
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/chair.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/lift.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/move.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/operation.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/package.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/product_type.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/putdown.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/request.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/request_blocking_queue.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/sofa.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../src/request_blocking_queue.cpp
+
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/backoffice.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/chair.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/identifiable.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/lift.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/move.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/operation.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/package.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/product.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/product_type.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/putdown.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/request.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/request_blocking_queue.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/roboworker.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/sofa.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/task.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/timestampable.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/utilities.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/warehouse.h
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../src/roboworker.cpp
+
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/identifiable.h
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/task.h
@@ -100,6 +140,7 @@ CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/timestampable.h
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/utilities.h
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../src/task.cpp
 
+CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/backoffice.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/chair.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/identifiable.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/lift.h
@@ -110,6 +151,8 @@ CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/product.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/product_type.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/putdown.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/request.h
+CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/request_blocking_queue.h
+CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/roboworker.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/sofa.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/task.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/timestampable.h

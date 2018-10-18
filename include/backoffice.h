@@ -9,19 +9,22 @@
 #include "request_blocking_queue.h"
 
 class Backoffice {
- public:
-  Backoffice(std::string filename);
-  void start(std::function<void(std::vector<Request>&)> callback);
+public:
+    Backoffice(std::string filename);
+    void start(std::function<void(std::vector<Request> &)> callback);
+    int get_workers_count() const { return workers_count_; }
+    int get_total_requests_count() const { return total_requests_count_; }
+    RequestBlockingQueue &get_request_queue();
+    void receive_batched_requests();
+private:
+    std::vector<std::string> splitStr(std::string str, std::string delimiter);
 
-  int workers_count() { return workers_count_; }
+    int calculate_total_requests();
 
- private:
-  std::vector<std::string> splitStr(std::string str, std::string delimiter);
-
-  std::vector<std::string> lines_;
-  int workers_count_;
-  int total_requests_count_;
-  RequestBlockingQueue requestBlockingQueue_;
+    std::vector<std::string> lines_;
+     int workers_count_;
+    const int total_requests_count_;
+    RequestBlockingQueue requestBlockingQueue_;
 };
 
 #endif  // BACKOFFICE_H

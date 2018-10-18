@@ -12,7 +12,7 @@ public:
         workloadMultiplier_ = weight_;
     };
 
-    constexpr int getWeight() { return weight_; };
+    constexpr int getWeight() const { return weight_; };
 private:
     int weight_;
 };

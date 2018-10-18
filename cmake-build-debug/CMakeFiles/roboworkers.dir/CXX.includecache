@@ -15,6 +15,8 @@ vector
 -
 request.h
 ../include/request.h
+request_blocking_queue.h
+../include/request_blocking_queue.h
 
 ../include/chair.h
 product.h
@@ -94,6 +96,22 @@ product.h
 operation.h
 ../include/operation.h
 
+../include/request_blocking_queue.h
+deque
+-
+boost/thread/mutex.hpp
+-
+boost/thread/condition_variable.hpp
+-
+request.h
+../include/request.h
+
+../include/roboworker.h
+request_blocking_queue.h
+../include/request_blocking_queue.h
+warehouse.h
+../include/warehouse.h
+
 ../include/sofa.h
 product.h
 ../include/product.h
@@ -141,6 +159,12 @@ vector
 -
 request.h
 ../include/request.h
+request_blocking_queue.h
+../include/request_blocking_queue.h
+roboworker.h
+../include/roboworker.h
+backoffice.h
+../include/backoffice.h
 
 /home/spiros/cpp/roboworkers/src/backoffice.cpp
 backoffice.h
@@ -156,6 +180,8 @@ iostream
 boost/algorithm/string.hpp
 -
 boost/lexical_cast.hpp
+-
+numeric
 -
 
 /home/spiros/cpp/roboworkers/src/identifiable.cpp
@@ -214,6 +240,14 @@ product.h
 putdown.h
 /home/spiros/cpp/roboworkers/src/putdown.h
 
+/home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp
+request_blocking_queue.h
+/home/spiros/cpp/roboworkers/src/request_blocking_queue.h
+
+/home/spiros/cpp/roboworkers/src/roboworker.cpp
+roboworker.h
+/home/spiros/cpp/roboworkers/src/roboworker.h
+
 /home/spiros/cpp/roboworkers/src/task.cpp
 task.h
 /home/spiros/cpp/roboworkers/src/task.h
@@ -222,5 +256,11 @@ task.h
 warehouse.h
 /home/spiros/cpp/roboworkers/src/warehouse.h
 iostream
+-
+roboworker.h
+-
+thread
+-
+boost/thread.hpp
 -
 

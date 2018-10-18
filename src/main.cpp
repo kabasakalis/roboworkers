@@ -42,10 +42,12 @@ int main(int argc, char **argv) {
 
     std::string filename = argc > 1 ? argv[1] : "../data.txt";
     Backoffice backoffice(filename);
-    Warehouse warehouse(backoffice.workers_count());
-    backoffice.start(std::bind(&Warehouse::onNewRequests, &warehouse, _1));
+    Warehouse warehouse(backoffice);
+//    backoffice.start(std::bind(&Warehouse::onNewRequests, &warehouse, _1));
+    backoffice.receive_batched_requests();
+    warehouse.serve_requests();
 
-    warehouse.wait();
+//    warehouse.wait();
 
     return 0;
 }

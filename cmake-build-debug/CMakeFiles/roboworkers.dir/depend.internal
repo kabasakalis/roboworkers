@@ -13,6 +13,7 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o
  ../include/product_type.h
  ../include/putdown.h
  ../include/request.h
+ ../include/request_blocking_queue.h
  ../include/sofa.h
  ../include/task.h
  ../include/timestampable.h
@@ -43,6 +44,8 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o
  ../include/product_type.h
  ../include/putdown.h
  ../include/request.h
+ ../include/request_blocking_queue.h
+ ../include/roboworker.h
  ../include/sofa.h
  ../include/task.h
  ../include/timestampable.h
@@ -93,14 +96,7 @@ CMakeFiles/roboworkers.dir/src/putdown.cpp.o
  ../include/timestampable.h
  ../include/utilities.h
  /home/spiros/cpp/roboworkers/src/putdown.cpp
-CMakeFiles/roboworkers.dir/src/task.cpp.o
- ../include/identifiable.h
- ../include/product.h
- ../include/task.h
- ../include/timestampable.h
- ../include/utilities.h
- /home/spiros/cpp/roboworkers/src/task.cpp
-CMakeFiles/roboworkers.dir/src/warehouse.cpp.o
+CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o
  ../include/chair.h
  ../include/identifiable.h
  ../include/lift.h
@@ -111,6 +107,53 @@ CMakeFiles/roboworkers.dir/src/warehouse.cpp.o
  ../include/product_type.h
  ../include/putdown.h
  ../include/request.h
+ ../include/request_blocking_queue.h
+ ../include/sofa.h
+ ../include/task.h
+ ../include/timestampable.h
+ ../include/utilities.h
+ /home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o
+ ../include/backoffice.h
+ ../include/chair.h
+ ../include/identifiable.h
+ ../include/lift.h
+ ../include/move.h
+ ../include/operation.h
+ ../include/package.h
+ ../include/product.h
+ ../include/product_type.h
+ ../include/putdown.h
+ ../include/request.h
+ ../include/request_blocking_queue.h
+ ../include/roboworker.h
+ ../include/sofa.h
+ ../include/task.h
+ ../include/timestampable.h
+ ../include/utilities.h
+ ../include/warehouse.h
+ /home/spiros/cpp/roboworkers/src/roboworker.cpp
+CMakeFiles/roboworkers.dir/src/task.cpp.o
+ ../include/identifiable.h
+ ../include/product.h
+ ../include/task.h
+ ../include/timestampable.h
+ ../include/utilities.h
+ /home/spiros/cpp/roboworkers/src/task.cpp
+CMakeFiles/roboworkers.dir/src/warehouse.cpp.o
+ ../include/backoffice.h
+ ../include/chair.h
+ ../include/identifiable.h
+ ../include/lift.h
+ ../include/move.h
+ ../include/operation.h
+ ../include/package.h
+ ../include/product.h
+ ../include/product_type.h
+ ../include/putdown.h
+ ../include/request.h
+ ../include/request_blocking_queue.h
+ ../include/roboworker.h
  ../include/sofa.h
  ../include/task.h
  ../include/timestampable.h
