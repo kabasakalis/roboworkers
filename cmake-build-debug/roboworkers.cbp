@@ -124,6 +124,9 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/request.h">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/request_blocking_queue.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/sofa.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -164,6 +167,9 @@
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/putdown.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/task.cpp">

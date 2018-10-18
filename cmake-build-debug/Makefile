@@ -366,6 +366,33 @@ src/putdown.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/putdown.cpp.s
 .PHONY : src/putdown.cpp.s
 
+src/request_blocking_queue.o: src/request_blocking_queue.cpp.o
+
+.PHONY : src/request_blocking_queue.o
+
+# target to build an object file
+src/request_blocking_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o
+.PHONY : src/request_blocking_queue.cpp.o
+
+src/request_blocking_queue.i: src/request_blocking_queue.cpp.i
+
+.PHONY : src/request_blocking_queue.i
+
+# target to preprocess a source file
+src/request_blocking_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.i
+.PHONY : src/request_blocking_queue.cpp.i
+
+src/request_blocking_queue.s: src/request_blocking_queue.cpp.s
+
+.PHONY : src/request_blocking_queue.s
+
+# target to generate assembly for a file
+src/request_blocking_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.s
+.PHONY : src/request_blocking_queue.cpp.s
+
 src/task.o: src/task.cpp.o
 
 .PHONY : src/task.o
@@ -456,6 +483,9 @@ help:
 	@echo "... src/putdown.o"
 	@echo "... src/putdown.i"
 	@echo "... src/putdown.s"
+	@echo "... src/request_blocking_queue.o"
+	@echo "... src/request_blocking_queue.i"
+	@echo "... src/request_blocking_queue.s"
 	@echo "... src/task.o"
 	@echo "... src/task.i"
 	@echo "... src/task.s"
