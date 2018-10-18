@@ -12,6 +12,7 @@
 class Warehouse {
  public:
   Warehouse(int workers_count);
+
   /**
    * @brief wait Waits until all the requests are handled.
    */
@@ -25,6 +26,7 @@ class Warehouse {
   void onNewRequests(std::vector<Request> &new_requests);
 
  private:
+    std::deque<boost::thread> worker_threads;
 };
 
 #endif  // WAREHOUSE_H

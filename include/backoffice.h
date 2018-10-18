@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "request.h"
+#include "request_blocking_queue.h"
 
 class Backoffice {
  public:
@@ -19,6 +20,8 @@ class Backoffice {
 
   std::vector<std::string> lines_;
   int workers_count_;
+  int total_requests_count_;
+  RequestBlockingQueue requestBlockingQueue_;
 };
 
 #endif  // BACKOFFICE_H
