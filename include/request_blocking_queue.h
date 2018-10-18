@@ -58,28 +58,29 @@ public:
         request_added_or_closed_event_.notify_all();
     }
 
-    bool serve_first() {
+//    bool pop_front(Request &served_request) {
+       Request& pop_front() {
         boost::mutex::scoped_lock lock(requests_mutex_);
         while (requests_.empty()) {
-            if (is_closed) {
-                return false;
-            }
+//            if (is_closed) {
+//                return false;
+//            }
             request_added_or_closed_event_.wait(lock);
         }
 
-      Request&  current_request = requests_.front();
-        //do something with the current_request
+        Request &current_request = requests_.front();
         requests_.pop_front();
         request_removed_event_.notify_one();
-        return true;
+//        return true;
+        return  current_request;
     }
 
-    bool try_serve_first() {
+    bool try_pop_front() {
         boost::mutex::scoped_lock lock(requests_mutex_);
         if (requests_.empty()) {
             return false;
         }
-        Request&  current_request = requests_.front();
+        Request &current_request = requests_.front();
         requests_.pop_front();
         request_removed_event_.notify_one();
         return true;
