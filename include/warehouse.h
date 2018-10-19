@@ -18,7 +18,7 @@
 class Warehouse {
 public:
 //    Warehouse(int get_workers_count, RequestBlockingQueue &backoffice_requests);
-    Warehouse(Backoffice& backoffice);
+    Warehouse( Backoffice& backoffice);
 
     /**
      * @brief wait Waits until all the requests are handled.
@@ -34,7 +34,7 @@ public:
 
     void serve_requests();
 
-    Backoffice&  get_backoffice();
+    const Backoffice&  get_backoffice() const;
 
 
 private:

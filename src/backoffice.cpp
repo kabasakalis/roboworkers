@@ -10,22 +10,25 @@
 
 
 std::atomic_int Backoffice::completed_operations_count{0};
-Backoffice::Backoffice(std::string filename):
-        total_requests_count( calculate_total_requests()) {
-    std::string line;
-    std::ifstream input(filename);
-    if (!input.is_open()) {
-        throw std::runtime_error("File not found!");
-    }
 
-    std::getline(input, line);
-    workers_count_ = boost::lexical_cast<int>(line);
-
-    while (std::getline(input, line)) {
-        if (line == "") break;
-        lines_.push_back(line);
-    }
-    input.close();
+Backoffice::Backoffice(std::string filename) :
+        lines_(read_requests_from_file(filename)),
+        workers_count_(read_workers_count_from_file(filename)),
+        total_requests_count(calculate_total_requests()) {
+//    std::string line;
+//    std::ifstream input(filename);
+//    if (!input.is_open()) {
+//        throw std::runtime_error("File not found!");
+//    }
+//
+//    std::getline(input, line);
+//    workers_count_ = boost::lexical_cast<int>(line);
+//
+//    while (std::getline(input, line)) {
+//        if (line == "") break;
+//        lines_.push_back(line);
+//    }
+//    input.close();
 
 }
 
@@ -91,14 +94,12 @@ int Backoffice::calculate_total_requests() {
 }
 
 
-
-
-RequestBlockingQueue& Backoffice::get_request_queue() {
+RequestBlockingQueue &Backoffice::get_request_queue() {
     return requestBlockingQueue_;
 }
 
 void Backoffice::receive_batched_requests() {
-        int wait_for = 0;
+    int wait_for = 0;
 
     for (std::string &line : lines_) {
         std::vector<Request> requests;
@@ -142,4 +143,32 @@ void Backoffice::receive_batched_requests() {
         usleep(wait_for * 1000);
     }
 
+}
+
+std::vector<std::string> Backoffice::read_requests_from_file(std::string filename) {
+    std::vector<std::string> lines;
+    std::string line;
+    std::ifstream input(filename);
+    if (!input.is_open()) {
+        throw std::runtime_error("File not found!");
+    }
+
+    std::getline(input, line);
+    workers_count_ = boost::lexical_cast<int>(line);
+
+    while (std::getline(input, line)) {
+        if (line == "") break;
+        lines.push_back(line);
+    }
+    input.close();
+    return lines;
+}
+
+int Backoffice::read_workers_count_from_file(std::string filename) {
+    std::ifstream infile(filename);
+    if (!infile.good()) throw std::runtime_error("File not found!");
+    std::string firstLine;
+    getline(infile, firstLine);
+    infile.close();
+    return boost::lexical_cast<int>(firstLine);
 }

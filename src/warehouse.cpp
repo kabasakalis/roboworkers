@@ -7,7 +7,7 @@
 
 #include <boost/thread.hpp>
 
-Warehouse::Warehouse(Backoffice& backoffice) :
+Warehouse::Warehouse( Backoffice& backoffice) :
         backoffice_(backoffice),
         workers_(initialize_workers()),
         worker_threads_(initialize_threads()){
@@ -45,7 +45,7 @@ void Warehouse::serve_requests() {
 
 
 
-Backoffice &Warehouse::get_backoffice() {
+const Backoffice&  Warehouse::get_backoffice() const {
     return backoffice_;
 }
 
