@@ -1,16 +1,20 @@
 #include "warehouse.h"
 
 #include <iostream>
-#include <roboworker.h>
 #include <thread>
+#include <roboworker.h>
+
+
 #include <boost/thread.hpp>
 
-
-
-Warehouse::Warehouse(Backoffice &backoffice) :
-        backoffice_(backoffice) {
+Warehouse::Warehouse(Backoffice& backoffice) :
+        backoffice_(backoffice),
+        workers_(initialize_workers()),
+        worker_threads_(initialize_threads()){
     // TODO: Implement me
     std::cout << "Workers count: " << backoffice.get_workers_count() << std::endl;
+
+
 }
 
 
@@ -34,25 +38,31 @@ void Warehouse::onNewRequests(std::vector<Request> &new_requests) {
 }
 
 void Warehouse::serve_requests() {
-// join worker threads
-    for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
-        RoboWorker roboworker(*this);
-        workers_.push_back(roboworker);
-    }
 
-    for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
-        worker_threads_[i] = boost::thread(&RoboWorker::work, &workers_[i]);
-    }
     for (auto &worker_thread : worker_threads_) worker_thread.join();
 }
 
-std::atomic_int Warehouse::completed_operations_count = 0;
 
-bool Warehouse::pending_requests() {
-    return completed_operations_count < backoffice_.get_total_requests_count();
-}
+
 
 Backoffice &Warehouse::get_backoffice() {
     return backoffice_;
+}
+
+std::vector<RoboWorker> Warehouse::initialize_workers() {
+    for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
+        RoboWorker roboworker(backoffice_.get_request_queue(), backoffice_.total_requests_count);
+        workers_.push_back(roboworker);
+    }
+    return workers_;
+}
+
+
+std::vector<boost::thread>  Warehouse::initialize_threads() {
+        for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
+
+        worker_threads_[i] = boost::thread(&RoboWorker::work, &workers_[i]);
+    }
+    return std::move(worker_threads_);
 }
 

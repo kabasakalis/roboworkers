@@ -131,7 +131,6 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o
  ../include/task.h
  ../include/timestampable.h
  ../include/utilities.h
- ../include/warehouse.h
  /home/spiros/cpp/roboworkers/src/roboworker.cpp
 CMakeFiles/roboworkers.dir/src/task.cpp.o
  ../include/identifiable.h

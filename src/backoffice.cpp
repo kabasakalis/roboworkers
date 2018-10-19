@@ -8,7 +8,10 @@
 #include <boost/lexical_cast.hpp>
 #include <numeric>
 
-Backoffice::Backoffice(std::string filename) {
+
+std::atomic_int Backoffice::completed_operations_count{0};
+Backoffice::Backoffice(std::string filename):
+        total_requests_count( calculate_total_requests()) {
     std::string line;
     std::ifstream input(filename);
     if (!input.is_open()) {
@@ -23,7 +26,6 @@ Backoffice::Backoffice(std::string filename) {
         lines_.push_back(line);
     }
     input.close();
-    total_requests_count_ = calculate_total_requests();
 
 }
 
@@ -84,9 +86,12 @@ std::vector<std::string> Backoffice::splitStr(std::string str,
 int Backoffice::calculate_total_requests() {
     std::vector<int> requests_per_batch(lines_.size());
     std::transform(lines_.begin(), lines_.end(), requests_per_batch.begin(),
-                   [](std::string line) { return (splitStr(line, " ").size() - 1); });
+                   [this](std::string line) { return (splitStr(line, " ").size() - 1); });
     return std::accumulate(requests_per_batch.begin(), requests_per_batch.end(), 0);
 }
+
+
+
 
 RequestBlockingQueue& Backoffice::get_request_queue() {
     return requestBlockingQueue_;

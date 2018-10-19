@@ -12,6 +12,7 @@
 #include "utilities.h"
 #include "backoffice.h"
 #include "warehouse.h"
+#include "roboworker.h"
 #include "operation.h"
 
 int main(int argc, char **argv) {

@@ -130,7 +130,6 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/sofa.h
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/task.h
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/timestampable.h
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/utilities.h
-CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../include/warehouse.h
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../src/roboworker.cpp
 
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../include/identifiable.h

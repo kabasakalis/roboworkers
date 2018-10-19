@@ -109,8 +109,6 @@ request.h
 ../include/roboworker.h
 request_blocking_queue.h
 ../include/request_blocking_queue.h
-warehouse.h
-../include/warehouse.h
 
 ../include/sofa.h
 product.h
@@ -161,10 +159,10 @@ request.h
 ../include/request.h
 request_blocking_queue.h
 ../include/request_blocking_queue.h
-roboworker.h
-../include/roboworker.h
 backoffice.h
 ../include/backoffice.h
+boost/thread.hpp
+-
 
 /home/spiros/cpp/roboworkers/src/backoffice.cpp
 backoffice.h
@@ -217,6 +215,8 @@ backoffice.h
 /home/spiros/cpp/roboworkers/src/backoffice.h
 warehouse.h
 /home/spiros/cpp/roboworkers/src/warehouse.h
+roboworker.h
+/home/spiros/cpp/roboworkers/src/roboworker.h
 operation.h
 /home/spiros/cpp/roboworkers/src/operation.h
 
@@ -245,6 +245,8 @@ request_blocking_queue.h
 /home/spiros/cpp/roboworkers/src/request_blocking_queue.h
 
 /home/spiros/cpp/roboworkers/src/roboworker.cpp
+backoffice.h
+-
 roboworker.h
 /home/spiros/cpp/roboworkers/src/roboworker.h
 
@@ -257,9 +259,9 @@ warehouse.h
 /home/spiros/cpp/roboworkers/src/warehouse.h
 iostream
 -
-roboworker.h
--
 thread
+-
+roboworker.h
 -
 boost/thread.hpp
 -
