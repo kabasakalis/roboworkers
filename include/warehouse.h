@@ -6,10 +6,9 @@
 #include "request_blocking_queue.h"
 #include "backoffice.h"
 
-#include <boost/thread.hpp>
-class RoboWorker;
+#include <boost/thread/thread.hpp>
 
-//#include "roboworker.h"
+#include "roboworker.h"
 
 /**
  * @brief The Warehouse class models the Warehouse
