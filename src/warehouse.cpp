@@ -50,19 +50,22 @@ const Backoffice&  Warehouse::get_backoffice() const {
 }
 
 std::vector<RoboWorker> Warehouse::initialize_workers() {
+    std::vector<RoboWorker> workers;
     for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
         RoboWorker roboworker(backoffice_.get_request_queue(), backoffice_.total_requests_count);
-        workers_.push_back(roboworker);
+        workers.push_back(roboworker);
     }
-    return workers_;
+    return workers;
 }
 
 
 std::vector<boost::thread>  Warehouse::initialize_threads() {
+
+    std::vector<boost::thread> worker_threads;
         for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
 
-        worker_threads_[i] = boost::thread(&RoboWorker::work, &workers_[i]);
+        worker_threads[i] = boost::thread(&RoboWorker::work, &workers_[i]);
     }
-    return std::move(worker_threads_);
+    return std::move(worker_threads);
 }
 

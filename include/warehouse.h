@@ -38,11 +38,11 @@ public:
 
 
 private:
+    Backoffice& backoffice_;
     std::vector<RoboWorker> workers_;
     std::vector<boost::thread> worker_threads_;
     std::vector<RoboWorker> initialize_workers();
     std::vector<boost::thread> initialize_threads();
-    Backoffice& backoffice_;
 };
 
 #endif  // WAREHOUSE_H
