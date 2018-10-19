@@ -10,24 +10,28 @@
 
 class RequestBlockingQueue {
 private:
-    std::deque<Request> requests_;
     mutable boost::mutex requests_mutex_;
     const size_t requests_count_;
-
     bool is_closed = false;
 
     boost::condition_variable request_added_or_closed_event_;
+
     boost::condition_variable request_removed_event_;
-
-
 public:
+
+
     RequestBlockingQueue(size_t requests_count = 0) : requests_count_(requests_count) {}
+    std::deque<Request> requests_;
+
+   int get_size(){ return requests_.size();};
+    std::deque<Request>& get_request(){ return requests_;};
+
 
     void add_one(const Request &request) {
         boost::mutex::scoped_lock lock(requests_mutex_);
-        while (requests_.size() >= requests_count_) {
-            request_removed_event_.wait(lock);
-        }
+//        while (requests_.size() >= requests_count_) {
+//            request_removed_event_.wait(lock);
+//        }
         assert (!is_closed);
         requests_.emplace_back(request);
 

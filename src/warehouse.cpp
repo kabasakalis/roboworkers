@@ -64,7 +64,7 @@ std::vector<boost::thread>  Warehouse::initialize_threads() {
     std::vector<boost::thread> worker_threads;
         for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
 
-        worker_threads[i] = boost::thread(&RoboWorker::work, &workers_[i]);
+        worker_threads.emplace_back(boost::thread(&RoboWorker::work, &workers_[i]));
     }
     return std::move(worker_threads);
 }

@@ -25,8 +25,6 @@ product_type.h
 ../include/product_type.h
 
 ../include/identifiable.h
-string
--
 utilities.h
 ../include/utilities.h
 
@@ -150,6 +148,8 @@ boost/uuid/uuid.hpp
 boost/uuid/uuid_io.hpp
 -
 boost/uuid/uuid_generators.hpp
+-
+boost/thread.hpp
 -
 
 ../include/warehouse.h

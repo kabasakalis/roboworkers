@@ -9,6 +9,7 @@
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_io.hpp>
 #include <boost/uuid/uuid_generators.hpp>
+#include <boost/thread.hpp>
 
 /**
  * @brief getUUID Returns a UUID as a string
@@ -44,7 +45,7 @@ inline void logTask(std::string operation_id, std::string task_id,
                     std::chrono::system_clock::time_point start_time,
                     std::chrono::system_clock::time_point finish_time,
                     int workload) {
-  std::cout << "#- " << operation_id << " " << task_id << " "
+  std::cout << "#- " <<  boost::this_thread::get_id() << " | " << operation_id << " " << task_id << " "
             << timePointToLong(start_time) << " "
             << timePointToLong(finish_time) << " " << workload << std::endl;
 }

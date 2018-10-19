@@ -8,7 +8,7 @@
 
 class PutDown : public Task {
 public:
-    PutDown(const std::string &operationId, const Product &product) :
+    PutDown(const std::string operationId, const Product &product) :
             Task(operationId,
                  product,
                  productType_To_WorkloadCalculator.at(product.getType())(product)) {};

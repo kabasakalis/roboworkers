@@ -8,7 +8,7 @@
 
 class Lift : public Task {
 public:
-    Lift(const std::string &operationId, const Product &product) :
+    Lift(const std::string operationId, const Product &product) :
             Task(operationId,
                  product,
                  productType_To_WorkloadCalculator.at(product.getType())(product)) {};
