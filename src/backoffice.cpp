@@ -136,7 +136,7 @@ void Backoffice::receive_batched_requests() {
                     throw std::runtime_error("Malformed input file.");
             }
 
-            requests.emplace_back(product_type, operation_type);
+//            requests.emplace_back(product_type, operation_type);
             requestBlockingQueue_.add_one(Request(product_type, operation_type));
         }
 //        callback(requests);

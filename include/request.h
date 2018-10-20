@@ -10,6 +10,14 @@ struct Request {
               operation_type_(operation_type),
               operation_(Operation(operation_type, get_product_from_Type(product_type))) {}
 
+
+    Request():
+      product_type_(Product::Type::CHAIR),
+      operation_type_(Operation::Type::INBOUND),
+      operation_(Operation(Operation::Type::INBOUND, get_product_from_Type(Product::Type::CHAIR )))
+    {}
+
+
     Operation &get_operation() { return operation_ ;};
 private:
     Product get_product_from_Type(Product::Type product_type) {

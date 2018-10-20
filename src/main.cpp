@@ -50,5 +50,6 @@ int main(int argc, char **argv) {
 
 //    warehouse.wait();
 
+    std::cout << "ALL FINISHED" <<  std::endl;
     return 0;
 }

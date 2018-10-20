@@ -40,6 +40,8 @@ void Warehouse::onNewRequests(std::vector<Request> &new_requests) {
 void Warehouse::serve_requests() {
 
     for (auto &worker_thread : worker_threads_) worker_thread.join();
+
+    std::cout << "SERVE REW" <<  std::endl;
 }
 
 
@@ -60,10 +62,8 @@ std::vector<RoboWorker> Warehouse::initialize_workers() {
 
 
 std::vector<boost::thread>  Warehouse::initialize_threads() {
-
     std::vector<boost::thread> worker_threads;
         for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
-
         worker_threads.emplace_back(boost::thread(&RoboWorker::work, &workers_[i]));
     }
     return std::move(worker_threads);
