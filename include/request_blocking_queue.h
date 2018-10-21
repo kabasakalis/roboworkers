@@ -55,7 +55,7 @@ public:
 
     void close() {
         boost::mutex::scoped_lock lock(requests_mutex_);
-        assert (!is_closed);
+//        assert (!is_closed);
         is_closed = true;
         lock.unlock();
 
@@ -66,9 +66,10 @@ public:
        Request pop_front() {
         boost::mutex::scoped_lock lock(requests_mutex_);
         while (requests_.empty()) {
-//            if (is_closed) {
-//                return false;
-//            }
+            if (is_closed) {
+//                return (Request) NULL;
+                return Request(Product::Type::CHAIR,  Operation::Type::INBOUND);
+            }
             request_added_or_closed_event_.wait(lock);
         }
 

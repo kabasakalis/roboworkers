@@ -36,7 +36,9 @@ public:
 
     const Backoffice&  get_backoffice() const;
 
+    static  boost::condition_variable all_requests_have_been_served_event_;
 
+   static  boost::mutex serve_requests_mutex_;
 private:
     Backoffice& backoffice_;
     std::vector<RoboWorker> workers_;

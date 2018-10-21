@@ -249,6 +249,10 @@ request_blocking_queue.h
 /home/spiros/cpp/roboworkers/src/roboworker.cpp
 backoffice.h
 -
+stdatomic.h
+-
+warehouse.h
+-
 roboworker.h
 /home/spiros/cpp/roboworkers/src/roboworker.h
 
