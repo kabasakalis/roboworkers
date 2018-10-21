@@ -10,14 +10,13 @@ class Timestampable {
 public:
     Timestampable() : creation_time(getTimestamp()) {};
 
-     virtual Timepoint get_create_time() const { return creation_time; }
-     virtual Timepoint get_start_time() const { return start_time; };
-     virtual Timepoint get_finish_time() const { return finish_time; };
-    void set_start_time() { start_time = getTimestamp(); };
-
-    void set_finish_time() { finish_time = getTimestamp(); };
+    virtual Timepoint get_create_time() const { return creation_time; }
+    virtual Timepoint get_start_time() const { return start_time; };
+    virtual Timepoint get_finish_time() const { return finish_time; };
+    virtual void set_start_time() { start_time = getTimestamp(); };
+    virtual void set_finish_time() { finish_time = getTimestamp(); };
 protected:
-     Timepoint creation_time;
+    Timepoint creation_time;
     Timepoint start_time;
     Timepoint finish_time;
 };

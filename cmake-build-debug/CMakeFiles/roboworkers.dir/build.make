@@ -225,9 +225,33 @@ CMakeFiles/roboworkers.dir/src/package.cpp.o.provides: CMakeFiles/roboworkers.di
 CMakeFiles/roboworkers.dir/src/package.cpp.o.provides.build: CMakeFiles/roboworkers.dir/src/package.cpp.o
 
 
+CMakeFiles/roboworkers.dir/src/packager.cpp.o: CMakeFiles/roboworkers.dir/flags.make
+CMakeFiles/roboworkers.dir/src/packager.cpp.o: ../src/packager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/roboworkers.dir/src/packager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/packager.cpp.o -c /home/spiros/cpp/roboworkers/src/packager.cpp
+
+CMakeFiles/roboworkers.dir/src/packager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboworkers.dir/src/packager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spiros/cpp/roboworkers/src/packager.cpp > CMakeFiles/roboworkers.dir/src/packager.cpp.i
+
+CMakeFiles/roboworkers.dir/src/packager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboworkers.dir/src/packager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spiros/cpp/roboworkers/src/packager.cpp -o CMakeFiles/roboworkers.dir/src/packager.cpp.s
+
+CMakeFiles/roboworkers.dir/src/packager.cpp.o.requires:
+
+.PHONY : CMakeFiles/roboworkers.dir/src/packager.cpp.o.requires
+
+CMakeFiles/roboworkers.dir/src/packager.cpp.o.provides: CMakeFiles/roboworkers.dir/src/packager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/packager.cpp.o.provides.build
+.PHONY : CMakeFiles/roboworkers.dir/src/packager.cpp.o.provides
+
+CMakeFiles/roboworkers.dir/src/packager.cpp.o.provides.build: CMakeFiles/roboworkers.dir/src/packager.cpp.o
+
+
 CMakeFiles/roboworkers.dir/src/product.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/product.cpp.o: ../src/product.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/roboworkers.dir/src/product.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/roboworkers.dir/src/product.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/product.cpp.o -c /home/spiros/cpp/roboworkers/src/product.cpp
 
 CMakeFiles/roboworkers.dir/src/product.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/roboworkers.dir/src/product.cpp.o.provides.build: CMakeFiles/robowork
 
 CMakeFiles/roboworkers.dir/src/putdown.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/putdown.cpp.o: ../src/putdown.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/roboworkers.dir/src/putdown.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/roboworkers.dir/src/putdown.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/putdown.cpp.o -c /home/spiros/cpp/roboworkers/src/putdown.cpp
 
 CMakeFiles/roboworkers.dir/src/putdown.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/roboworkers.dir/src/putdown.cpp.o.provides.build: CMakeFiles/robowork
 
 CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o: ../src/request_blocking_queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o -c /home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp
 
 CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o.provides.build: CMak
 
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../src/roboworker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/roboworkers.dir/src/roboworker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/roboworkers.dir/src/roboworker.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/roboworker.cpp.o -c /home/spiros/cpp/roboworkers/src/roboworker.cpp
 
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.i: cmake_force
@@ -323,7 +347,7 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o.provides.build: CMakeFiles/robow
 
 CMakeFiles/roboworkers.dir/src/task.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/task.cpp.o: ../src/task.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/roboworkers.dir/src/task.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/roboworkers.dir/src/task.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/task.cpp.o -c /home/spiros/cpp/roboworkers/src/task.cpp
 
 CMakeFiles/roboworkers.dir/src/task.cpp.i: cmake_force
@@ -347,7 +371,7 @@ CMakeFiles/roboworkers.dir/src/task.cpp.o.provides.build: CMakeFiles/roboworkers
 
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: CMakeFiles/roboworkers.dir/flags.make
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../src/warehouse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/warehouse.cpp.o -c /home/spiros/cpp/roboworkers/src/warehouse.cpp
 
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.i: cmake_force
@@ -378,6 +402,7 @@ roboworkers_OBJECTS = \
 "CMakeFiles/roboworkers.dir/src/move.cpp.o" \
 "CMakeFiles/roboworkers.dir/src/operation.cpp.o" \
 "CMakeFiles/roboworkers.dir/src/package.cpp.o" \
+"CMakeFiles/roboworkers.dir/src/packager.cpp.o" \
 "CMakeFiles/roboworkers.dir/src/product.cpp.o" \
 "CMakeFiles/roboworkers.dir/src/putdown.cpp.o" \
 "CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o" \
@@ -395,6 +420,7 @@ roboworkers: CMakeFiles/roboworkers.dir/src/main.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/move.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/operation.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/package.cpp.o
+roboworkers: CMakeFiles/roboworkers.dir/src/packager.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/product.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/putdown.cpp.o
 roboworkers: CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o
@@ -405,7 +431,7 @@ roboworkers: CMakeFiles/roboworkers.dir/build.make
 roboworkers: /usr/local/lib/libboost_thread.a
 roboworkers: /usr/local/lib/libboost_system.a
 roboworkers: CMakeFiles/roboworkers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable roboworkers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable roboworkers"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboworkers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -420,6 +446,7 @@ CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/main.cpp.o.r
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/move.cpp.o.requires
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/operation.cpp.o.requires
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/package.cpp.o.requires
+CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/packager.cpp.o.requires
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/product.cpp.o.requires
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/putdown.cpp.o.requires
 CMakeFiles/roboworkers.dir/requires: CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o.requires

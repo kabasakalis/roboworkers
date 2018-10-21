@@ -112,6 +112,9 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/package.h">
 			<Option target="roboworkers"/>
 		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/packager.h">
+			<Option target="roboworkers"/>
+		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/product.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -164,6 +167,9 @@
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/package.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/packager.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/product.cpp">

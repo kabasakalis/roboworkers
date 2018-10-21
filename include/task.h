@@ -12,7 +12,7 @@
 
 using WorkloadCalculator = std::function<int(Product)>;
 
-class Task : public Identifiable, Timestampable {
+class Task : public Identifiable, public Timestampable {
 public:
 
     Task(std::string operationId,

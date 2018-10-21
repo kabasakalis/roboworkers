@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/roboworkers.dir/src/move.cpp.o"
   "CMakeFiles/roboworkers.dir/src/operation.cpp.o"
   "CMakeFiles/roboworkers.dir/src/package.cpp.o"
+  "CMakeFiles/roboworkers.dir/src/packager.cpp.o"
   "CMakeFiles/roboworkers.dir/src/product.cpp.o"
   "CMakeFiles/roboworkers.dir/src/putdown.cpp.o"
   "CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o"

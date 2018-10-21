@@ -72,6 +72,10 @@ task.h
 unordered_map
 -
 
+../include/packager.h
+product.h
+../include/product.h
+
 ../include/product.h
 string
 -
@@ -235,6 +239,10 @@ operation.h
 /home/spiros/cpp/roboworkers/src/package.cpp
 package.h
 /home/spiros/cpp/roboworkers/src/package.h
+
+/home/spiros/cpp/roboworkers/src/packager.cpp
+packager.h
+/home/spiros/cpp/roboworkers/src/packager.h
 
 /home/spiros/cpp/roboworkers/src/product.cpp
 product.h

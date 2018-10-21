@@ -44,7 +44,10 @@ public:
 
     void process() {
         set_start_time();
-        for (auto task : tasks_) task.execute();
+        for (auto task : tasks_) {
+           task.
+            task.execute();
+        }
         set_finish_time();
         logOperation(id, creation_time, start_time, finish_time);
     };

@@ -84,6 +84,12 @@ CMakeFiles/roboworkers.dir/src/package.cpp.o
  ../include/timestampable.h
  ../include/utilities.h
  /home/spiros/cpp/roboworkers/src/package.cpp
+CMakeFiles/roboworkers.dir/src/packager.cpp.o
+ ../include/identifiable.h
+ ../include/packager.h
+ ../include/product.h
+ ../include/utilities.h
+ /home/spiros/cpp/roboworkers/src/packager.cpp
 CMakeFiles/roboworkers.dir/src/product.cpp.o
  ../include/identifiable.h
  ../include/product.h

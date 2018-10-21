@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/spiros/cpp/roboworkers/src/move.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/move.cpp.o"
   "/home/spiros/cpp/roboworkers/src/operation.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/operation.cpp.o"
   "/home/spiros/cpp/roboworkers/src/package.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/package.cpp.o"
+  "/home/spiros/cpp/roboworkers/src/packager.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/packager.cpp.o"
   "/home/spiros/cpp/roboworkers/src/product.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/product.cpp.o"
   "/home/spiros/cpp/roboworkers/src/putdown.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/putdown.cpp.o"
   "/home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp" "/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o"

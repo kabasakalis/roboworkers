@@ -13,6 +13,8 @@ public:
             Task(operationId,
                  product,
                  productType_To_WorkloadCalculator.at(product.getType())(product)) {};
+
+
 private:
     const static std::unordered_map<Product::Type, WorkloadCalculator> productType_To_WorkloadCalculator;
 };
