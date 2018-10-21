@@ -105,8 +105,6 @@ request.h
 ../include/request.h
 
 ../include/roboworker.h
-request_blocking_queue.h
-../include/request_blocking_queue.h
 
 ../include/sofa.h
 product.h
@@ -183,6 +181,8 @@ boost/lexical_cast.hpp
 -
 numeric
 -
+roboworker.h
+/home/spiros/cpp/roboworkers/src/roboworker.h
 
 /home/spiros/cpp/roboworkers/src/identifiable.cpp
 

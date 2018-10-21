@@ -16,13 +16,7 @@
  */
 class Warehouse {
 public:
-//    Warehouse(int get_workers_count, RequestBlockingQueue &backoffice_requests);
-    Warehouse( Backoffice& backoffice);
-
-    /**
-     * @brief wait Waits until all the requests are handled.
-     */
-    void wait();
+    Warehouse(Backoffice &backoffice);
 
     /**
      * @brief onNewRequests This method is called when new requests arrive from
@@ -31,14 +25,13 @@ public:
      */
     void onNewRequests(std::vector<Request> &new_requests);
 
-    void serve_requests();
+    /**
+     * @brief wait Waits until all the requests are handled.
+     */
+    void wait_for_workers_to_finish();
 
-    const Backoffice&  get_backoffice() const;
-
-
-   static  boost::mutex serve_requests_mutex_;
 private:
-    Backoffice& backoffice_;
+    Backoffice &backoffice_;
     std::vector<RoboWorker> workers_;
     std::vector<boost::thread> worker_threads_;
     std::vector<RoboWorker> initialize_workers();

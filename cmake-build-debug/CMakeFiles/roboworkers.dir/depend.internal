@@ -14,6 +14,7 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o
  ../include/putdown.h
  ../include/request.h
  ../include/request_blocking_queue.h
+ ../include/roboworker.h
  ../include/sofa.h
  ../include/task.h
  ../include/timestampable.h

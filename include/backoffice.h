@@ -12,17 +12,14 @@
 class Backoffice {
 public:
     Backoffice(std::string filename);
-    void start(std::function<void(std::vector<Request> &)> callback);
-    int get_workers_count() const { return workers_count_; }
-     RequestBlockingQueue &get_request_queue() ;
+    std::deque<Request>& get_request_queue() ;
     void receive_batched_requests();
     std::vector<std::string> lines_;
+    const int workers_count;
     const int total_requests_count;
     static std::atomic_int completed_operations_count;
-    RequestBlockingQueue requestBlockingQueue_;
-    std::deque<Request> reqs_;
 private:
-    int workers_count_;
+    std::deque<Request> requests_;
     int read_workers_count_from_file(std::string filename);
     std::vector<std::string> read_requests_from_file(std::string filename);
     int calculate_total_requests();

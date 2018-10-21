@@ -2,23 +2,20 @@
 #ifndef ROBOWORKERS_ROBOWORKER_H
 #define ROBOWORKERS_ROBOWORKER_H
 
-
-#include "request_blocking_queue.h"
-
 class RoboWorker {
 
 public:
-    RoboWorker(RequestBlockingQueue& requestBlockingQueue_, int total_requests_count, std::deque<Request>& reqs)
-            : requestBlockingQueue_(requestBlockingQueue_), total_requests_count_(total_requests_count), reqs_(reqs){}
-    void work();
+    RoboWorker(std::deque<Request> &backoffice_requests, int total_requests_count)
+            : backoffice_requests_(backoffice_requests), total_requests_count_(total_requests_count) {}
 
+    static boost::mutex serve_requests_mutex_;
+    static boost::condition_variable available_requests_event;
+    void work();
 private:
     std::deque<Request> served_requests;
-    RequestBlockingQueue& requestBlockingQueue_;
-    std::deque<Request>& reqs_;
+    std::deque<Request> &backoffice_requests_;
     const int total_requests_count_;
-    bool  pending_requests();
+    bool pending_requests();
 };
-
 
 #endif //ROBOWORKERS_ROBOWORKER_H

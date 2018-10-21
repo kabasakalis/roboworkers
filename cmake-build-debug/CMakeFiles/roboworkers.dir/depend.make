@@ -13,6 +13,7 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/product_type.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/putdown.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/request.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/request_blocking_queue.h
+CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/roboworker.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/sofa.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/task.h
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../include/timestampable.h

@@ -16,7 +16,6 @@ public:
             type_(productType),
             name_(name) {};
 
-
     virtual std::string getName() const;
     virtual Type getType() const;
     virtual int getWorkloadMultiplier() const { return workloadMultiplier_; };
