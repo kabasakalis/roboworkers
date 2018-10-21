@@ -20,6 +20,7 @@ public:
     const int total_requests_count;
     static std::atomic_int completed_operations_count;
     RequestBlockingQueue requestBlockingQueue_;
+    std::deque<Request> reqs_;
 private:
     int workers_count_;
     int read_workers_count_from_file(std::string filename);

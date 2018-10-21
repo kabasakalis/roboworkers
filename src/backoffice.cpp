@@ -9,6 +9,9 @@
 #include <numeric>
 
 
+extern boost::condition_variable available_requests_event;
+extern boost::mutex serve_requests_mutex_;
+
 std::atomic_int Backoffice::completed_operations_count{0};
 
 Backoffice::Backoffice(std::string filename) :
@@ -32,52 +35,7 @@ Backoffice::Backoffice(std::string filename) :
 
 }
 
-void Backoffice::start(std::function<void(std::vector<Request> &)> callback) {
 
-    int wait_for = 0;
-
-    for (std::string &line : lines_) {
-        std::vector<Request> requests;
-        std::vector<std::string> fields = splitStr(line, " ");
-        wait_for = boost::lexical_cast<int>(fields.back());
-        fields.pop_back();
-        for (std::string &s : fields) {
-            if (s.size() != 2) {
-                std::cout << s << std::endl;
-                throw std::runtime_error("Malformed input file.");
-            }
-
-            Operation::Type operation_type;
-            switch (s[0]) {
-                case 'I':
-                    operation_type = Operation::Type::INBOUND;
-                    break;
-                case 'D':
-                    operation_type = Operation::Type::DELIVER;
-                    break;
-                default:
-                    throw std::runtime_error("Malformed input file.");
-            }
-
-            Product::Type product_type;
-            switch (s[1]) {
-                case 'S':
-                    product_type = Product::Type::SOFA;
-                    break;
-                case 'C':
-                    product_type = Product::Type::CHAIR;
-                    break;
-                default:
-                    throw std::runtime_error("Malformed input file.");
-            }
-
-            requests.emplace_back(Request(product_type, operation_type));
-            requestBlockingQueue_.add_one(Request(product_type, operation_type));
-        }
-//        callback(requests);
-        usleep(wait_for * 1000);
-    }
-}
 
 std::vector<std::string> Backoffice::splitStr(std::string str,
                                               std::string delimiter) {
@@ -137,12 +95,26 @@ void Backoffice::receive_batched_requests() {
             }
 
 //            requests.emplace_back(product_type, operation_type);
-            requestBlockingQueue_.add_one(Request(product_type, operation_type));
+//            requestBlockingQueue_.add_one(Request(product_type, operation_type));
+
+
+            boost::mutex m;
+            boost::mutex::scoped_lock lock(m);
+//            boost::mutex::scoped_lock lock(serve_requests_mutex_);
+            reqs_.emplace_back(Request(product_type, operation_type));
+            lock.unlock();
+            available_requests_event.notify_one();
+
+//****
+
+
         }
 //        callback(requests);
 
         std::cout << "Sleeping for : " << wait_for << std::endl;
         usleep(wait_for * 1000);
+
+        available_requests_event.notify_all();
     }
 
 }

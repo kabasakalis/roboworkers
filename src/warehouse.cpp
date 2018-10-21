@@ -54,7 +54,8 @@ const Backoffice&  Warehouse::get_backoffice() const {
 std::vector<RoboWorker> Warehouse::initialize_workers() {
     std::vector<RoboWorker> workers;
     for (int i = 0; i < backoffice_.get_workers_count(); ++i) {
-        RoboWorker roboworker(backoffice_.get_request_queue(), backoffice_.total_requests_count);
+//        RoboWorker roboworker(backoffice_.get_request_queue(), backoffice_.total_requests_count);
+        RoboWorker roboworker(backoffice_.get_request_queue(), backoffice_.total_requests_count, backoffice_.reqs_);
         workers.push_back(roboworker);
     }
     return workers;

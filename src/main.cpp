@@ -14,10 +14,15 @@
 #include "warehouse.h"
 #include "roboworker.h"
 #include "operation.h"
-
+#include <boost/timer.hpp>
 int main(int argc, char **argv) {
     using namespace std::placeholders;
     srand(time(NULL));
+
+
+
+boost::timer t;
+
 
 //   Sofa sofa;
 //    Chair chair;
@@ -41,6 +46,10 @@ int main(int argc, char **argv) {
 //    std::cout << sofa.getId() << std::endl;
 //    std::cout << sofa.getName() << std::endl;
 
+
+//     boost::condition_variable lolo;
+
+
     std::string filename = argc > 1 ? argv[1] : "../data.txt";
     Backoffice backoffice(filename);
     Warehouse warehouse(backoffice);
@@ -50,6 +59,7 @@ int main(int argc, char **argv) {
 
 //    warehouse.wait();
 
-    std::cout << "ALL FINISHED" <<  std::endl;
+    std::cout << "ALL FINISHED in"  << t.elapsed() <<  std::endl;
+
     return 0;
 }

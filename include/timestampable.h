@@ -17,7 +17,7 @@ public:
 
     void set_finish_time() { finish_time = getTimestamp(); };
 protected:
-    const Timepoint creation_time;
+     Timepoint creation_time;
     Timepoint start_time;
     Timepoint finish_time;
 };
