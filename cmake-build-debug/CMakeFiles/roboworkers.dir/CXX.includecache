@@ -71,10 +71,16 @@ task.h
 -
 unordered_map
 -
+packager.h
+../include/packager.h
 
 ../include/packager.h
 product.h
 ../include/product.h
+task.h
+../include/task.h
+utilities.h
+../include/utilities.h
 
 ../include/product.h
 string

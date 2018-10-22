@@ -9,7 +9,7 @@
 #include <numeric>
 #include "roboworker.h"
 
-std::atomic_int Backoffice::completed_operations_count{0};
+std::atomic_int Backoffice::processed_requests_count{0};
 
 Backoffice::Backoffice(std::string filename) :
         lines_(read_requests_from_file(filename)),
@@ -55,7 +55,8 @@ void Backoffice::receive_batched_requests() {
             }
 
             boost::mutex::scoped_lock lock(RoboWorker::serve_requests_mutex_);
-            requests_.emplace_back(Request(product_type, operation_type));
+//            requests_.emplace_back(std::move(Request(product_type, operation_type)));
+            requests_.emplace_back(product_type, operation_type);
             lock.unlock();
             RoboWorker::available_requests_event.notify_one();
 

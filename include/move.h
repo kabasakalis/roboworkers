@@ -9,7 +9,7 @@
 
 class Move : public Task {
 public:
-    Move(const std::string operationId, const Product &product) :
+    Move(const std::string operationId,  Product &product) :
             Task(operationId,
                  product,
                  productType_To_WorkloadCalculator.at(product.getType())(product)) {};

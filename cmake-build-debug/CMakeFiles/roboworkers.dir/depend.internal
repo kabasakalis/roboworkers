@@ -9,6 +9,7 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h
@@ -41,6 +42,7 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h
@@ -68,6 +70,7 @@ CMakeFiles/roboworkers.dir/src/operation.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h
@@ -79,6 +82,7 @@ CMakeFiles/roboworkers.dir/src/operation.cpp.o
 CMakeFiles/roboworkers.dir/src/package.cpp.o
  ../include/identifiable.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/task.h
  ../include/timestampable.h
@@ -88,6 +92,8 @@ CMakeFiles/roboworkers.dir/src/packager.cpp.o
  ../include/identifiable.h
  ../include/packager.h
  ../include/product.h
+ ../include/task.h
+ ../include/timestampable.h
  ../include/utilities.h
  /home/spiros/cpp/roboworkers/src/packager.cpp
 CMakeFiles/roboworkers.dir/src/product.cpp.o
@@ -110,6 +116,7 @@ CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h
@@ -128,6 +135,7 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h
@@ -155,6 +163,7 @@ CMakeFiles/roboworkers.dir/src/warehouse.cpp.o
  ../include/move.h
  ../include/operation.h
  ../include/package.h
+ ../include/packager.h
  ../include/product.h
  ../include/product_type.h
  ../include/putdown.h

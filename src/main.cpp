@@ -15,13 +15,13 @@
 #include "roboworker.h"
 #include "operation.h"
 #include <boost/timer.hpp>
+
 int main(int argc, char **argv) {
     using namespace std::placeholders;
     srand(time(NULL));
 
 
-
-boost::timer t;
+    boost::timer t;
 
 
 //   Sofa sofa;
@@ -36,18 +36,43 @@ boost::timer t;
 //    Lift lift("OpID_200", chair);
 //    PutDown putDown("OpID_300", chair);
 //    Package package("OpID_400", sofa);
+//    Task& package2 = package;
+//    package2.execute();
 //    move.execute();
 //    lift.execute();
 //    putDown.execute();
 //    package.execute();
 //    std::cout << chair.getId() << std::endl;
 //    std::cout << chair.getName() << std::endl;
+
+
+
+    Sofa sofa;
+    Sofa sofa2;
+//    Package package("OpID_400", sofa);
+//    Task &packageRef = package;
 //
-//    std::cout << sofa.getId() << std::endl;
-//    std::cout << sofa.getName() << std::endl;
+//    Sofa sofa2;
+//    Package package2("OpID_401", sofa2);
+//    Task &package2Ref = package2;
 
 
-//     boost::condition_variable lolo;
+//    std::unique_ptr<Task> a(new Package("OpID_401", sofa));
+//
+//
+//    std::vector<std::unique_ptr<Task>> tasks;
+//    tasks.emplace_back(std::move(a));
+//    tasks.front()->execute();
+//
+//
+//    std::vector<std::unique_ptr<Task>> tasks2(32);
+//    std::unique_ptr<Task> b(new Package("OpID_401", sofa));
+//    tasks2.emplace_back(std::move(b));
+//    tasks2.back()->execute();
+//    std::vector<std::unique_ptr<int>> v(10);
+
+
+
 
 
     std::string filename = argc > 1 ? argv[1] : "../data.txt";
@@ -55,7 +80,7 @@ boost::timer t;
     Warehouse warehouse(backoffice);
     backoffice.receive_batched_requests();
     warehouse.wait_for_workers_to_finish();
-    std::cout << "ALL FINISHED in"  << t.elapsed() <<  std::endl;
+    std::cout << "ALL FINISHED in" << t.elapsed() << std::endl;
 
     return 0;
 }

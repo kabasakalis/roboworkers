@@ -15,8 +15,14 @@ using WorkloadCalculator = std::function<int(Product)>;
 class Task : public Identifiable, public Timestampable {
 public:
 
+        Task() :
+            operationId_("NOT_AVAILABLE"),
+            product_(Product()),
+            workload_(0) {}
+
+
     Task(std::string operationId,
-         const Product &product,
+          Product &product,
          int workload) :
             operationId_(operationId),
             product_(product),

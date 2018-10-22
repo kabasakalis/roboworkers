@@ -9,12 +9,15 @@
 class Product : public Identifiable {
 public:
     enum Type {
-        PRODUCT, SOFA, CHAIR
+        NONE, SOFA, CHAIR
     };
 
     Product(Product::Type productType, const std::string &name) :
             type_(productType),
-            name_(name) {};
+            name_(name),
+            workloadMultiplier_(0) {};
+
+   Product():type_(Type::NONE), name_(stringify(Product::Type::NONE)), workloadMultiplier_{0} {};
 
     virtual std::string getName() const;
     virtual Type getType() const;
