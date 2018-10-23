@@ -12,27 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244f95fa-cbdd-4420-882d-94572a4acabf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/include/date/chrono_io.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/date.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/ios.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/islamic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/iso_week.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/julian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/ptz.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/tz.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/date/tz_private.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/src/product.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/backoffice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/backoffice.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/lift.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/lift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/move.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/move.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/roboworkers.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/roboworkers.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/operation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/operation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/package.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/package.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/packager.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/packager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/product.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/putdown.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/putdown.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/request.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/request.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/task.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/task.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backoffice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/backoffice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utilities.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roboworker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/roboworker.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/-lpthread -lboost_thread -lboost_system-mt/" />
@@ -51,11 +51,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.55063677">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="operation.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="operation.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/operation.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="407">
-                  <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+                <state relative-caret-position="270">
+                  <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
                   <folding>
                     <element signature="e#66#88#0" expanded="true" />
                   </folding>
@@ -63,26 +63,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="packager.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/packager.h">
+          <file leaf-file-name="utilities.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/utilities.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+                <state relative-caret-position="270">
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
                   <folding>
-                    <element signature="e#64#84#0" expanded="true" />
+                    <element signature="e#41#58#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/package.h">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#62#82#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +91,8 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="143">
-                  <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+                <state relative-caret-position="399">
+                  <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -103,56 +100,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="roboworker.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/roboworker.cpp">
+          <file leaf-file-name="timestampable.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/timestampable.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-                  <folding>
-                    <element signature="e#1#24#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="product.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/product.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
-                  <folding>
-                    <element signature="e#62#79#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="operation_type.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/operation_type.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="task.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/task.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#56#80#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="task.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/task.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="1" selection-start-column="1" selection-end-column="1" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -186,6 +138,11 @@
       <find>get_wor</find>
       <find>usle</find>
       <find>/</find>
+      <find>current_zon</find>
+      <find>tz.h</find>
+      <find>:local</find>
+      <find>g</find>
+      <find>getTim</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,9 +171,7 @@
         <option value="$PROJECT_DIR$/src/operation.h" />
         <option value="$PROJECT_DIR$/include/chair.h" />
         <option value="$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/FindBoost.cmake" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/identifiable.h" />
-        <option value="$PROJECT_DIR$/include/utilities.h" />
         <option value="$PROJECT_DIR$/include/request_blocking_queue.h" />
         <option value="$PROJECT_DIR$/include/roboworker.h" />
         <option value="$PROJECT_DIR$/include/warehouse.h" />
@@ -229,12 +184,17 @@
         <option value="$PROJECT_DIR$/include/product.h" />
         <option value="$PROJECT_DIR$/include/task.h" />
         <option value="$PROJECT_DIR$/src/backoffice.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/include/request.h" />
-        <option value="$PROJECT_DIR$/include/operation.h" />
         <option value="$PROJECT_DIR$/include/packager.h" />
         <option value="$PROJECT_DIR$/src/roboworker.cpp" />
         <option value="$PROJECT_DIR$/include/package.h" />
+        <option value="$PROJECT_DIR$/include/util/date.h" />
+        <option value="$PROJECT_DIR$/include/util/tz.h" />
+        <option value="$PROJECT_DIR$/src/tz.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/utilities.h" />
+        <option value="$PROJECT_DIR$/include/operation.h" />
       </list>
     </option>
   </component>
@@ -261,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +242,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,6 +252,10 @@
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/include/util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include" />
     </key>
@@ -328,12 +292,13 @@
       <workItem from="1539583224346" duration="49536000" />
       <workItem from="1539845707789" duration="50654000" />
       <workItem from="1539953410133" duration="102613000" />
-      <workItem from="1540224410785" duration="24444000" />
+      <workItem from="1540224410785" duration="26599000" />
+      <workItem from="1540297708825" duration="15299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268858000" />
+    <option name="totallyTimeSpent" value="286312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-14" width="1922" height="1040" extended-state="6" />
@@ -346,12 +311,12 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32928178" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24861878" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32928178" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48950276" weight="0.12193823" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48950276" visible="true" weight="0.12300319" />
       <window_info anchor="right" id="LuaJ" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3237569" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5104972" side_tool="true" weight="0.25239617" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35801104" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23646408" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,22 +327,22 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24861878" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48950276" visible="true" weight="0.15761448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928178" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32928178" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928178" />
       <window_info anchor="right" id="LuaJ" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3646409" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32154697" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32928178" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32928178" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32154697" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928178" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32928178" />
       <window_info id="Favorites" order="2" sideWeight="0.5104972" side_tool="true" weight="0.25239617" />
     </layout-to-restore>
   </component>
@@ -506,29 +471,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/boost/thread/pthread/thread_data.hpp" />
-    <entry file="file:///usr/local/include/boost/system/error_code.hpp" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/FindBoost.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="819" column="57" selection-start-line="819" selection-start-column="57" selection-end-line="819" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/boost/thread/pthread/condition_variable_fwd.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -613,9 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#57#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#62#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/timestampable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -727,13 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utilities.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -765,59 +684,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/product.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
-          <folding>
-            <element signature="e#62#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/operation_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/task.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="e#56#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/lift.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#55#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lift.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -852,12 +724,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/operation.h">
+    <entry file="file://$PROJECT_DIR$/src/roboworker.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="e#66#88#0" expanded="true" />
+            <element signature="e#1#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/product.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="96" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+          <folding>
+            <element signature="e#62#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/operation_type.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/package.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#62#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -872,22 +778,367 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roboworker.cpp">
+    <entry file="file://$PROJECT_DIR$/include/util/date.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+        <state relative-caret-position="540">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/util/tz.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="285" column="4" selection-start-line="285" selection-start-column="4" selection-end-line="285" selection-end-column="4" />
           <folding>
-            <element signature="e#1#24#0" expanded="true" />
+            <element signature="e#2555#2585#0" expanded="true" />
+            <element signature="e#2716#2744#0" expanded="true" />
+            <element signature="e#3340#3572#0" expanded="true" />
+            <element signature="e#3677#3711#0" expanded="true" />
+            <element signature="e#3859#3882#0" expanded="true" />
+            <element signature="e#3891#3911#0" expanded="true" />
+            <element signature="e#4191#4368#0" expanded="true" />
+            <element signature="e#4399#4460#0" expanded="true" />
+            <element signature="e#4856#4883#0" expanded="true" />
+            <element signature="e#5355#5382#0" expanded="true" />
+            <element signature="e#5964#5980#0" expanded="true" />
+            <element signature="e#6090#6106#0" expanded="true" />
+            <element signature="e#6227#6243#0" expanded="true" />
+            <element signature="e#6479#6495#0" expanded="true" />
+            <element signature="e#7196#7212#0" expanded="true" />
+            <element signature="e#7320#7336#0" expanded="true" />
+            <element signature="e#7457#7473#0" expanded="true" />
+            <element signature="e#7654#7670#0" expanded="true" />
+            <element signature="e#8188#8252#0" expanded="true" />
+            <element signature="e#8398#8407#0" expanded="true" />
+            <element signature="e#8459#8461#0" expanded="true" />
+            <element signature="e#8672#8790#0" expanded="true" />
+            <element signature="e#9162#9197#0" expanded="true" />
+            <element signature="e#9234#9287#0" expanded="true" />
+            <element signature="e#9432#9486#0" expanded="true" />
+            <element signature="e#9770#9860#0" expanded="true" />
+            <element signature="e#9952#10042#0" expanded="true" />
+            <element signature="e#10173#10544#0" expanded="true" />
+            <element signature="e#10612#11049#0" expanded="true" />
+            <element signature="e#11136#11400#0" expanded="true" />
+            <element signature="e#11604#12054#0" expanded="true" />
+            <element signature="e#12191#12743#0" expanded="true" />
+            <element signature="e#12846#13130#0" expanded="true" />
+            <element signature="e#13231#13515#0" expanded="true" />
+            <element signature="e#13636#16432#0" expanded="true" />
+            <element signature="e#16523#17028#0" expanded="true" />
+            <element signature="e#17173#17678#0" expanded="true" />
+            <element signature="e#17816#18323#0" expanded="true" />
+            <element signature="e#18470#18977#0" expanded="true" />
+            <element signature="e#19117#19680#0" expanded="true" />
+            <element signature="e#19837#20400#0" expanded="true" />
+            <element signature="e#20550#21227#0" expanded="true" />
+            <element signature="e#21242#21288#0" expanded="true" />
+            <element signature="e#21450#22127#0" expanded="true" />
+            <element signature="e#22142#22188#0" expanded="true" />
+            <element signature="e#22343#23076#0" expanded="true" />
+            <element signature="e#23091#23137#0" expanded="true" />
+            <element signature="e#23326#24059#0" expanded="true" />
+            <element signature="e#24074#24120#0" expanded="true" />
+            <element signature="e#24727#24781#0" expanded="true" />
+            <element signature="e#24959#25023#0" expanded="true" />
+            <element signature="e#25237#25255#0" expanded="true" />
+            <element signature="e#25380#27260#0" expanded="true" />
+            <element signature="e#27308#27361#0" expanded="true" />
+            <element signature="e#27581#27634#0" expanded="true" />
+            <element signature="e#27913#27959#0" expanded="true" />
+            <element signature="e#28230#28331#0" expanded="true" />
+            <element signature="e#28702#28772#0" expanded="true" />
+            <element signature="e#28974#28990#0" expanded="true" />
+            <element signature="e#29058#29074#0" expanded="true" />
+            <element signature="e#29145#29161#0" expanded="true" />
+            <element signature="e#29309#29325#0" expanded="true" />
+            <element signature="e#29483#29499#0" expanded="true" />
+            <element signature="e#30137#30153#0" expanded="true" />
+            <element signature="e#30332#30348#0" expanded="true" />
+            <element signature="e#30532#30912#0" expanded="true" />
+            <element signature="e#31223#31589#0" expanded="true" />
+            <element signature="e#31761#31777#0" expanded="true" />
+            <element signature="e#31974#31990#0" expanded="true" />
+            <element signature="e#32191#32207#0" expanded="true" />
+            <element signature="e#32436#32452#0" expanded="true" />
+            <element signature="e#32685#32701#0" expanded="true" />
+            <element signature="e#33645#33661#0" expanded="true" />
+            <element signature="e#34318#34334#0" expanded="true" />
+            <element signature="e#35896#35963#0" expanded="true" />
+            <element signature="e#36301#36317#0" expanded="true" />
+            <element signature="e#36480#36496#0" expanded="true" />
+            <element signature="e#36658#36674#0" expanded="true" />
+            <element signature="e#37228#37244#0" expanded="true" />
+            <element signature="e#37373#37389#0" expanded="true" />
+            <element signature="e#37521#37537#0" expanded="true" />
+            <element signature="e#37669#37685#0" expanded="true" />
+            <element signature="e#37813#37829#0" expanded="true" />
+            <element signature="e#37957#37973#0" expanded="true" />
+            <element signature="e#38104#38120#0" expanded="true" />
+            <element signature="e#38251#38267#0" expanded="true" />
+            <element signature="e#38398#38414#0" expanded="true" />
+            <element signature="e#38585#39888#0" expanded="true" />
+            <element signature="e#40253#40300#0" expanded="true" />
+            <element signature="e#40542#41108#0" expanded="true" />
+            <element signature="e#41188#41249#0" expanded="true" />
+            <element signature="e#44200#44209#0" expanded="true" />
+            <element signature="e#44334#44349#0" expanded="true" />
+            <element signature="e#44602#44637#0" expanded="true" />
+            <element signature="e#44695#44711#0" expanded="true" />
+            <element signature="e#44866#44901#0" expanded="true" />
+            <element signature="e#44959#44975#0" expanded="true" />
+            <element signature="e#45180#45215#0" expanded="true" />
+            <element signature="e#45408#45622#0" expanded="true" />
+            <element signature="e#45665#45700#0" expanded="true" />
+            <element signature="e#45758#45774#0" expanded="true" />
+            <element signature="e#45989#46024#0" expanded="true" />
+            <element signature="e#46038#46062#0" expanded="true" />
+            <element signature="e#46256#46291#0" expanded="true" />
+            <element signature="e#46475#46510#0" expanded="true" />
+            <element signature="e#46568#46584#0" expanded="true" />
+            <element signature="e#46790#46825#0" expanded="true" />
+            <element signature="e#46883#46899#0" expanded="true" />
+            <element signature="e#47168#47203#0" expanded="true" />
+            <element signature="e#47217#47261#0" expanded="true" />
+            <element signature="e#47516#47551#0" expanded="true" />
+            <element signature="e#47565#47609#0" expanded="true" />
+            <element signature="e#47867#49525#0" expanded="true" />
+            <element signature="e#49568#49603#0" expanded="true" />
+            <element signature="e#49661#49677#0" expanded="true" />
+            <element signature="e#49947#49982#0" expanded="true" />
+            <element signature="e#50040#50056#0" expanded="true" />
+            <element signature="e#50319#50354#0" expanded="true" />
+            <element signature="e#50412#50428#0" expanded="true" />
+            <element signature="e#50698#50733#0" expanded="true" />
+            <element signature="e#50791#50807#0" expanded="true" />
+            <element signature="e#51070#51105#0" expanded="true" />
+            <element signature="e#51163#51179#0" expanded="true" />
+            <element signature="e#51462#51497#0" expanded="true" />
+            <element signature="e#51555#51571#0" expanded="true" />
+            <element signature="e#51847#51882#0" expanded="true" />
+            <element signature="e#51940#51991#0" expanded="true" />
+            <element signature="e#52002#52048#0" expanded="true" />
+            <element signature="e#52335#52370#0" expanded="true" />
+            <element signature="e#52428#52479#0" expanded="true" />
+            <element signature="e#52490#52536#0" expanded="true" />
+            <element signature="e#52816#52851#0" expanded="true" />
+            <element signature="e#52909#52960#0" expanded="true" />
+            <element signature="e#52971#53017#0" expanded="true" />
+            <element signature="e#53367#53402#0" expanded="true" />
+            <element signature="e#53460#53511#0" expanded="true" />
+            <element signature="e#53522#53568#0" expanded="true" />
+            <element signature="e#53939#53974#0" expanded="true" />
+            <element signature="e#54170#54205#0" expanded="true" />
+            <element signature="e#54418#54453#0" expanded="true" />
+            <element signature="e#54645#54680#0" expanded="true" />
+            <element signature="e#54868#54903#0" expanded="true" />
+            <element signature="e#55040#55075#0" expanded="true" />
+            <element signature="e#55281#55316#0" expanded="true" />
+            <element signature="e#55501#55536#0" expanded="true" />
+            <element signature="e#55829#55845#0" expanded="true" />
+            <element signature="e#56104#56697#0" expanded="true" />
+            <element signature="e#57009#57308#0" expanded="true" />
+            <element signature="e#57646#57945#0" expanded="true" />
+            <element signature="e#58296#58312#0" expanded="true" />
+            <element signature="e#58620#58636#0" expanded="true" />
+            <element signature="e#58957#58992#0" expanded="true" />
+            <element signature="e#59217#59252#0" expanded="true" />
+            <element signature="e#59473#59508#0" expanded="true" />
+            <element signature="e#59746#59781#0" expanded="true" />
+            <element signature="e#60015#60314#0" expanded="true" />
+            <element signature="e#60650#60666#0" expanded="true" />
+            <element signature="e#60972#61034#0" expanded="true" />
+            <element signature="e#61582#61644#0" expanded="true" />
+            <element signature="e#62362#62381#0" expanded="true" />
+            <element signature="e#62607#62626#0" expanded="true" />
+            <element signature="e#62854#62873#0" expanded="true" />
+            <element signature="e#63083#63102#0" expanded="true" />
+            <element signature="e#63318#63334#0" expanded="true" />
+            <element signature="e#63473#63489#0" expanded="true" />
+            <element signature="e#64192#64208#0" expanded="true" />
+            <element signature="e#65011#65027#0" expanded="true" />
+            <element signature="e#65650#65666#0" expanded="true" />
+            <element signature="e#65897#65913#0" expanded="true" />
+            <element signature="e#66220#66263#0" expanded="true" />
+            <element signature="e#66997#67040#0" expanded="true" />
+            <element signature="e#67291#67371#0" expanded="true" />
+            <element signature="e#69054#69073#0" expanded="true" />
+            <element signature="e#69292#69311#0" expanded="true" />
+            <element signature="e#69532#69551#0" expanded="true" />
+            <element signature="e#69760#69779#0" expanded="true" />
+            <element signature="e#69994#70010#0" expanded="true" />
+            <element signature="e#70181#70197#0" expanded="true" />
+            <element signature="e#70607#70623#0" expanded="true" />
+            <element signature="e#73403#73419#0" expanded="true" />
+            <element signature="e#73922#73938#0" expanded="true" />
+            <element signature="e#74584#74600#0" expanded="true" />
+            <element signature="e#74984#75000#0" expanded="true" />
+            <element signature="e#75384#75427#0" expanded="true" />
+            <element signature="e#75775#75818#0" expanded="true" />
+            <element signature="e#76069#76149#0" expanded="true" />
+            <element signature="e#77042#77061#0" expanded="true" />
+            <element signature="e#77280#77299#0" expanded="true" />
+            <element signature="e#77520#77539#0" expanded="true" />
+            <element signature="e#77748#77767#0" expanded="true" />
+            <element signature="e#77982#77998#0" expanded="true" />
+            <element signature="e#78144#78160#0" expanded="true" />
+            <element signature="e#78671#78687#0" expanded="true" />
+            <element signature="e#79164#80022#0" expanded="true" />
+            <element signature="e#80196#80212#0" expanded="true" />
+            <element signature="e#80604#80620#0" expanded="true" />
+            <element signature="e#81013#81056#0" expanded="true" />
+            <element signature="e#81404#81447#0" expanded="true" />
+            <element signature="e#81698#81778#0" expanded="true" />
+            <element signature="e#82284#82316#0" expanded="true" />
+            <element signature="e#82372#82374#0" expanded="true" />
+            <element signature="e#82485#82501#0" expanded="true" />
+            <element signature="e#82648#82650#0" expanded="true" />
+            <element signature="e#82729#82745#0" expanded="true" />
+            <element signature="e#82891#82893#0" expanded="true" />
+            <element signature="e#82968#82984#0" expanded="true" />
+            <element signature="e#83135#83137#0" expanded="true" />
+            <element signature="e#83232#83248#0" expanded="true" />
+            <element signature="e#83471#83473#0" expanded="true" />
+            <element signature="e#83568#83584#0" expanded="true" />
+            <element signature="e#83804#83806#0" expanded="true" />
+            <element signature="e#83899#83915#0" expanded="true" />
+            <element signature="e#84104#84106#0" expanded="true" />
+            <element signature="e#84199#84215#0" expanded="true" />
+            <element signature="e#84402#84404#0" expanded="true" />
+            <element signature="e#84481#84497#0" expanded="true" />
+            <element signature="e#84723#84725#0" expanded="true" />
+            <element signature="e#84802#84818#0" expanded="true" />
+            <element signature="e#85042#85058#0" expanded="true" />
+            <element signature="e#85129#85145#0" expanded="true" />
+            <element signature="e#85372#85401#0" expanded="true" />
+            <element signature="e#85631#85661#0" expanded="true" />
+            <element signature="e#86196#86239#0" expanded="true" />
+            <element signature="e#86299#86328#0" expanded="true" />
+            <element signature="e#86834#86877#0" expanded="true" />
+            <element signature="e#86939#86968#0" expanded="true" />
+            <element signature="e#87519#87562#0" expanded="true" />
+            <element signature="e#87622#87651#0" expanded="true" />
+            <element signature="e#88127#88170#0" expanded="true" />
+            <element signature="e#88232#88261#0" expanded="true" />
+            <element signature="e#88805#88857#0" expanded="true" />
+            <element signature="e#88918#88953#0" expanded="true" />
+            <element signature="e#89491#89543#0" expanded="true" />
+            <element signature="e#89606#89641#0" expanded="true" />
+            <element signature="e#90195#90211#0" expanded="true" />
+            <element signature="e#90305#90321#0" expanded="true" />
+            <element signature="e#90553#90569#0" expanded="true" />
+            <element signature="e#90663#90679#0" expanded="true" />
+            <element signature="e#90890#90906#0" expanded="true" />
+            <element signature="e#90984#91000#0" expanded="true" />
+            <element signature="e#91232#91248#0" expanded="true" />
+            <element signature="e#91326#91342#0" expanded="true" />
+            <element signature="e#91552#91571#0" expanded="true" />
+            <element signature="e#91647#91663#0" expanded="true" />
+            <element signature="e#91898#91917#0" expanded="true" />
+            <element signature="e#91993#92009#0" expanded="true" />
+            <element signature="e#92269#92298#0" expanded="true" />
+            <element signature="e#92427#92475#0" expanded="true" />
+            <element signature="e#92777#92825#0" expanded="true" />
+            <element signature="e#93102#93150#0" expanded="true" />
+            <element signature="e#93453#93501#0" expanded="true" />
+            <element signature="e#93845#93893#0" expanded="true" />
+            <element signature="e#94242#94290#0" expanded="true" />
+            <element signature="e#94665#94713#0" expanded="true" />
+            <element signature="e#94963#94979#0" expanded="true" />
+            <element signature="e#95177#95193#0" expanded="true" />
+            <element signature="e#95410#95426#0" expanded="true" />
+            <element signature="e#95644#95660#0" expanded="true" />
+            <element signature="e#95860#95876#0" expanded="true" />
+            <element signature="e#96074#96090#0" expanded="true" />
+            <element signature="e#96289#96305#0" expanded="true" />
+            <element signature="e#96526#96542#0" expanded="true" />
+            <element signature="e#96742#96758#0" expanded="true" />
+            <element signature="e#96978#96994#0" expanded="true" />
+            <element signature="e#97215#97231#0" expanded="true" />
+            <element signature="e#97431#97447#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/package.h">
+    <entry file="file://$PROJECT_DIR$/include/date/tz.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="426">
+          <caret line="383" lean-forward="true" selection-start-line="383" selection-end-line="383" />
           <folding>
-            <element signature="e#62#82#0" expanded="true" />
+            <element signature="e#9952#10257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/date/iso_week.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="452" selection-start-line="452" selection-end-line="452" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tz.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="170" column="17" selection-start-line="170" selection-start-column="17" selection-end-line="170" selection-end-column="17" />
+          <folding>
+            <element signature="e#5740#5786#0" expanded="true" />
+            <element signature="e#6156#7126#0" expanded="true" />
+            <element signature="e#7274#7315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/task.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding>
+            <element signature="e#56#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/timestampable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utilities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#41#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/operation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <folding>
+            <element signature="e#66#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

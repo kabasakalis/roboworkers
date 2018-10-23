@@ -19,16 +19,13 @@ endif()
 
 INCLUDE_DIRECTORIES(include)
 
-FILE(GLOB HEADERS include/*.h)
+FILE(GLOB_RECURSE HEADERS include/*.h)
 FILE(GLOB SOURCES src/*.cpp)
 
 set(Boost_USE_STATIC_LIBS        ON)
 set(Boost_USE_MULTITHREADED      ON)
 set(Boost_USE_STATIC_RUNTIME    OFF)
 find_package(Boost REQUIRED COMPONENTS thread system)
-
-
-
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 target_link_libraries(${PROJECT_NAME}  ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY}   )
