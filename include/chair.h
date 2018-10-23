@@ -7,7 +7,7 @@
 class Chair : public Product {
 public:
     Chair() : Product(Product::Type::CHAIR, stringify(Product::Type::CHAIR)),
-              weight_(getUniform(1, 5)) {
+              weight_(getUniform(1, 5))  {
 
         workloadMultiplier_ = weight_;
     };

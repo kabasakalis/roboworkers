@@ -11,7 +11,7 @@ public:
     PutDown(const std::string operationId,  Product &product) :
             Task(operationId,
                  product,
-                 productType_To_WorkloadCalculator.at(product.getType())(product)) {};
+                 productType_To_WorkloadCalculator.at(product.getType())(product), "PUT_DOWN") {};
 private:
     const static std::unordered_map<Product::Type, WorkloadCalculator> productType_To_WorkloadCalculator;
 };

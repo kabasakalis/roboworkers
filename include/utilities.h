@@ -11,10 +11,10 @@
 #include <boost/uuid/uuid_generators.hpp>
 #include <boost/thread.hpp>
 #include "date/date.h"
-#include "date/date.h"
-#include "date/tz.h"
-#include "date/tz_private.h"
-#include "date/ptz.h"
+//#include "date/date.h"
+//#include "date/tz.h"
+//#include "date/tz_private.h"
+//#include "date/ptz.h"
 //#include "operation.h"
 
 using namespace date;
@@ -68,43 +68,5 @@ inline void log_current_date_time() {
     std::cout << "The current date is " << Months[m - 1] << " " << d << ", " << y << ". \n";
     std::cout << "The current  time is  " << h << ":" << m << ":" << s << " UTC\n";
 }
-
-
-/**
- * @brief logTask Logs a task following the required format
- */
-inline void logTask(std::string operation_id, std::string task_id,
-                    std::chrono::system_clock::time_point start_time,
-                    std::chrono::system_clock::time_point finish_time,
-                    int workload) {
-    std::cout << "#- " << boost::this_thread::get_id() << " | " << operation_id << " " << task_id << " "
-              << utc_format(start_time) << " "
-              << utc_format(finish_time) << " " << workload << std::endl;
-}
-
-/**
- * @brief logOperation Logs an operation following the required format
- */
-inline void logOperation(std::string operation_id,
-                         std::chrono::system_clock::time_point creation_time,
-                         std::chrono::system_clock::time_point start_time,
-                         std::chrono::system_clock::time_point finish_time) {
-    std::cout << "## OPERATION ## |  ID: " << operation_id <<  " | "
-              << " TYPE: " << utc_format(creation_time) << " | "
-            << " CREATED AT: " << utc_format(creation_time) << " | "
-              << "START TIME: " << utc_format(start_time) << " | "
-              << "FINISH TIME: " << utc_format(finish_time) << " | " << std::endl;
-}
-
-
-//inline void logOperation(const Operation& operation){
-//    std::cout << "## OPERATION ## |  ID: " << operation.id <<  " | "
-//              << " TYPE: " << utc_format(operation.get_create_time()) << " | "
-//            << " CREATED AT: " << utc_format(operation.get_create_time() << " | "
-//              << "START TIME: " << utc_format(operation.get_start_time()) << " | "
-//              << "FINISH TIME: " << utc_format(operation.get_finish_time()) << " | " << std::endl;
-//}
-
-
 
 #endif  // UTILITIES_H

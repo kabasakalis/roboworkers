@@ -8,10 +8,10 @@
 
 class Lift : public Task {
 public:
-    Lift(const std::string operationId,  Product &product) :
+    Lift(const std::string operationId, Product &product) :
             Task(operationId,
                  product,
-                 productType_To_WorkloadCalculator.at(product.getType())(product)) {};
+                 productType_To_WorkloadCalculator.at(product.getType())(product), "LIFT") {};
 
 private:
     const static std::unordered_map<Product::Type, WorkloadCalculator> productType_To_WorkloadCalculator;

@@ -55,7 +55,6 @@ void Backoffice::receive_batched_requests() {
             }
 
             boost::mutex::scoped_lock lock(RoboWorker::serve_requests_mutex_);
-//            requests_.emplace_back(std::move(Request(product_type, operation_type)));
             requests_.emplace_back(product_type, operation_type);
             lock.unlock();
             RoboWorker::available_requests_event.notify_one();

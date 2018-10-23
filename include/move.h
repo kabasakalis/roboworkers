@@ -9,10 +9,10 @@
 
 class Move : public Task {
 public:
-    Move(const std::string operationId,  Product &product) :
+    Move(const std::string operationId, Product &product) :
             Task(operationId,
                  product,
-                 productType_To_WorkloadCalculator.at(product.getType())(product)) {};
+                 productType_To_WorkloadCalculator.at(product.getType())(product), "MOVE") {};
 private:
     const static std::unordered_map<Product::Type, WorkloadCalculator> productType_To_WorkloadCalculator;
 };

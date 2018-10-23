@@ -28,8 +28,19 @@ void RoboWorker::work() {
             served_requests.emplace_back(std::move(request));
         }
     }
-    std::cout << "FINISHED WORK " << " Thread: " << boost::this_thread::get_id() << " Requests served: "
-              << served_requests.size() << std::endl;
+    log_shutdown();
+}
+
+void RoboWorker::log_shutdown() {
+
+    std::cout << "---------------------------------------------------------------"
+              << "---------------------------------------------------------------" << std::endl;
+    std::cout << name << " HAS FINISHED WORK AND IS SHUTTING DOWN. " << " | "
+              << "THREAD ID: " << boost::this_thread::get_id() << " | "
+              << "NUMBER OF REQUESTS SERVED: " << served_requests.size()
+              << std::endl;
+    std::cout << "---------------------------------------------------------------"
+              << "---------------------------------------------------------------" << std::endl;
 }
 
 bool RoboWorker::pending_requests() {

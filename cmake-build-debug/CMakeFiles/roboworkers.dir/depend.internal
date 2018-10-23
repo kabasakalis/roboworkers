@@ -5,9 +5,6 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o
  ../include/backoffice.h
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
@@ -30,9 +27,6 @@ CMakeFiles/roboworkers.dir/src/identifiable.cpp.o
 CMakeFiles/roboworkers.dir/src/lift.cpp.o
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/product.h
@@ -46,9 +40,6 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o
  ../include/backoffice.h
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
@@ -69,9 +60,6 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o
  /home/spiros/cpp/roboworkers/src/main.cpp
 CMakeFiles/roboworkers.dir/src/move.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/move.h
  ../include/product.h
@@ -82,9 +70,6 @@ CMakeFiles/roboworkers.dir/src/move.cpp.o
 CMakeFiles/roboworkers.dir/src/operation.cpp.o
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
@@ -101,9 +86,6 @@ CMakeFiles/roboworkers.dir/src/operation.cpp.o
  /home/spiros/cpp/roboworkers/src/operation.cpp
 CMakeFiles/roboworkers.dir/src/package.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/package.h
  ../include/packager.h
@@ -114,9 +96,6 @@ CMakeFiles/roboworkers.dir/src/package.cpp.o
  /home/spiros/cpp/roboworkers/src/package.cpp
 CMakeFiles/roboworkers.dir/src/packager.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/packager.h
  ../include/product.h
@@ -126,18 +105,12 @@ CMakeFiles/roboworkers.dir/src/packager.cpp.o
  /home/spiros/cpp/roboworkers/src/packager.cpp
 CMakeFiles/roboworkers.dir/src/product.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/product.h
  ../include/utilities.h
  /home/spiros/cpp/roboworkers/src/product.cpp
 CMakeFiles/roboworkers.dir/src/putdown.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/product.h
  ../include/putdown.h
@@ -148,9 +121,6 @@ CMakeFiles/roboworkers.dir/src/putdown.cpp.o
 CMakeFiles/roboworkers.dir/src/request_blocking_queue.cpp.o
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
@@ -171,9 +141,6 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o
  ../include/backoffice.h
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
@@ -194,9 +161,6 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o
  /home/spiros/cpp/roboworkers/src/roboworker.cpp
 CMakeFiles/roboworkers.dir/src/task.cpp.o
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/product.h
  ../include/task.h
@@ -207,9 +171,6 @@ CMakeFiles/roboworkers.dir/src/warehouse.cpp.o
  ../include/backoffice.h
  ../include/chair.h
  ../include/date/date.h
- ../include/date/ptz.h
- ../include/date/tz.h
- ../include/date/tz_private.h
  ../include/identifiable.h
  ../include/lift.h
  ../include/move.h
