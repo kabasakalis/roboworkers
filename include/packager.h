@@ -18,17 +18,16 @@ private:
 
 public:
     Packager(Packager const &) = delete;
-
     void operator=(Packager const &)  = delete;
-
-   std::atomic_bool is_busy{false};
-
+    bool is_busy{false};
+    boost::condition_variable available;
     void package(int workload) {
         std::cout << "Packaging " << " Thread: " << boost::this_thread::get_id() << "  " << std::endl;
-//        is_busy = true;
-        usleep(static_cast<useconds_t >(workload) * 1000);
-//        is_busy = false;
+        is_busy = true;
+        usleep(static_cast<useconds_t>(workload) * 1000);
         std::cout << "Finished Packaging " << " Thread: " << boost::this_thread::get_id() << "  " << std::endl;
+        is_busy = false;
+        available.notify_all();
     }
 };
 

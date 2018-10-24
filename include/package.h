@@ -13,34 +13,22 @@ public:
     Package(const std::string &operationId, Product &product) :
             Task(operationId,
                  product,
-                 productType_To_WorkloadCalculator.at(product.getType())(product), "PACKAGE"){};
+                 productType_To_WorkloadCalculator.at(product.getType())(product), "PACKAGE") {};
 
     void execute() override {
-Task::execute();
-        while (!done) {
-            boost::mutex::scoped_lock lock(package_mutex_);
-            if (!Packager::getInstance().is_busy) {
-                Packager::getInstance().is_busy = true;
-                set_start_time();
-                Packager::getInstance().package(workload_);
-                set_finish_time();
-                Packager::getInstance().is_busy = false;
-                done = true;
-                packager_busy.notify_all();
-            }
-            if (!done) packager_busy.wait(lock);
-            lock.unlock();
-        }
+        boost::mutex::scoped_lock lock(package_mutex_);
+        Packager::getInstance().available.wait(lock, []() { return !Packager::getInstance().is_busy; });
+        set_start_time();
+        Packager::getInstance().package(workload_);
+        set_finish_time();
+        Packager::getInstance().available.notify_one();
+        lock.unlock();
         log();
-        std::cout << "OVERRIDEN EXETUTION" << std::endl;
     };
-
 
 private:
     const static std::unordered_map<Product::Type, WorkloadCalculator> productType_To_WorkloadCalculator;
     boost::mutex package_mutex_;
-    boost::condition_variable packager_busy;
-    std::atomic_bool done{false};
 };
 
 #endif //ROBOWORKERS_PACKAGE_H
