@@ -2,6 +2,7 @@
 
 Product::Type Product::get_type() const { return type_; }
 
-virtual std::string Product::get_name() const { return name_; }
+std::string Product::get_name() const { return name_; }
 
+int Product::getWorkloadMultiplier() const { return workloadMultiplier_; }
 

@@ -3,7 +3,6 @@
 #include "warehouse.h"
 
 int main(int argc, char **argv) {
-    using namespace std::placeholders;
     srand(time(NULL));
 
     std::string filename = argc > 1 ? argv[1] : "../data.txt";
