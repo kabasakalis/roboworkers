@@ -139,10 +139,6 @@ packager.h
 ../include/tasks/packager.h
 
 ../include/tasks/packager.h
-products/product.h
-../include/tasks/products/product.h
-tasks/task.h
-../include/tasks/tasks/task.h
 utilities/utilities.h
 ../include/tasks/utilities/utilities.h
 

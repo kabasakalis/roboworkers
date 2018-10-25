@@ -1,6 +1,24 @@
+/**
+ * @file operation.h
+ *
+ * @brief  Operation
+ *
+ * @version 1.0
+ *
+ * @defgroup  operations The operations
+ *
+ * @ingroup operations
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #ifndef ROBOWORKERS_OPERATION_H
 #define ROBOWORKERS_OPERATION_H
-
 
 #include <utilities/utilities.h>
 #include <products/product.h>
@@ -18,56 +36,37 @@ public:
         NONE, INBOUND, DELIVER
     };
 
+    /**
+     * Default Constructor
+     */
+    Operation();
 
-    Operation() : product_(Product()),
-                  type_(Type::NONE),
-                  type_name_(stringify(Type::NONE)),
-                  total_workload_processed(0) {};
+    /**
+     * Constructor
+     *
+     * Using a container of smart pointers to store tasks,
+     * so that  polymorphism can be used when iterating over them
+     * and calling Task::execute. The overriden and specialized execute
+     * method will be called for every subclass of Task. For example,
+     * the Package task has a specialized execute method that delegates
+     * to singleton's Packager::package method.
+     *
+     *
+     * @param type  the operation type enum
+     * @param product the product processed by the operation
+     */
+    Operation(Type type, Product product);
 
-    Operation(Type type, Product product) :
-            product_(product), type_(type) {
+    /**
+     * Process the operation, calling execute in every task sequentially.
+     */
+    void process();
 
-        switch (type) {
-            //LIFT->MOVE->PUT_DOWN->MOVE
-            case Type::INBOUND :
-                type_name_ = stringify(Type::INBOUND);
-                tasks_.emplace_back(std::shared_ptr<Task>(new Lift(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Move(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new PutDown(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Move(id, product_)));
-                break;
-                //MOVE-LIFT-MOVE-PACKAGE-MOVE-PUT_DOWN-MOVE
-            case Type::DELIVER:
-                type_name_ = stringify(Type::DELIVER);
-                tasks_.emplace_back(std::shared_ptr<Task>(new Move(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Lift(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Move(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Package(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Move(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new PutDown(id, product_)));
-                tasks_.emplace_back(std::unique_ptr<Task>(new Move(id, product_)));
-                break;
-            case Type::NONE:
-                break;
-            default:
-                throw std::runtime_error("Unknown operation type.");
-        }
-        total_workload_processed = calculate_total_workload();
-    }
-
-    void process() {
-        set_start_time();
-        for (auto &task : tasks_) task->execute();
-        set_finish_time();
-        log_operation(id, type_name_, product_.get_name(), total_workload_processed, creation_time, start_time,
-                      finish_time);
-    };
-
-     std::string get_type_name() {
+    std::string get_type_name() {
         return type_name_;
     };
 
-     std::string get_product_name() {
+    std::string get_product_name() {
         return product_.get_name();
     };
 
@@ -78,14 +77,10 @@ private:
     std::vector<std::shared_ptr<Task>> tasks_;
     int total_workload_processed;
 
-    int calculate_total_workload() {
-        std::vector<int> temp(tasks_.size());
-        std::transform(tasks_.begin(), tasks_.end(), temp.begin(),
-                       [this](std::shared_ptr<Task> task) { return task->get_workload(); });
-        return std::accumulate(temp.begin(), temp.end(), 0);
-    }
-
-
+    /**
+     * Calculate the sum of workloads for all tasks.
+     */
+    int calculate_total_workload();
 };
 
 #endif //ROBOWORKERS_OPERATION_H

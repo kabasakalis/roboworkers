@@ -25,12 +25,9 @@ public:
     /**
      *  Default Constructor
      */
-    Sofa() : Product(Product::Type::SOFA, stringify(Product::Type::SOFA)),
-             seatsCount_(getUniform(2, 5)) {
-        workloadMultiplier_ = seatsCount_;
-    };
+    Sofa();
 
-    constexpr int getSeats() const { return seatsCount_; };
+    constexpr int getSeats() const;;
 private:
     int seatsCount_;
 };

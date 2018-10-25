@@ -145,11 +145,7 @@ CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o
  /home/spiros/cpp/roboworkers/src/tasks/package.cpp
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o
  ../include/date/date.h
- ../include/products/product.h
  ../include/tasks/packager.h
- ../include/tasks/task.h
- ../include/utilities/identifiable.h
- ../include/utilities/timestampable.h
  ../include/utilities/utilities.h
  /home/spiros/cpp/roboworkers/src/tasks/packager.cpp
 CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o

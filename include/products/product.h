@@ -35,16 +35,12 @@ public:
  * @param productType Type enum
  * @param name string inentifier
  */
-    Product(Product::Type productType, const std::string &name) :
-            type_(productType),
-            name_(name),
-            workloadMultiplier_(0) {};
+    Product(Product::Type productType, std::string name);
 
 /**
  *  Default constructor
  */
-    Product() : type_(Type::NONE), name_(stringify(Product::Type::NONE)), workloadMultiplier_{0} {};
-
+    Product();
 
     virtual Type get_type() const;
 

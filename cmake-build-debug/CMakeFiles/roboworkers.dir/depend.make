@@ -144,11 +144,7 @@ CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o: ../include/utilities/utiliti
 CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o: ../src/tasks/package.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/date/date.h
-CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/products/product.h
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/tasks/packager.h
-CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/tasks/task.h
-CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/utilities/identifiable.h
-CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/utilities/timestampable.h
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../include/utilities/utilities.h
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../src/tasks/packager.cpp
 

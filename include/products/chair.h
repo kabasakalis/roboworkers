@@ -25,11 +25,9 @@ public:
     /**
      * Default Constructor
      */
-    Chair() : Product(Product::Type::CHAIR,
-                      stringify(Product::Type::CHAIR)),
-              weight_(getUniform(1, 5)) { workloadMultiplier_ = weight_; };
+    Chair();;
 
-    constexpr int getWeight() const { return weight_; };
+    constexpr int getWeight() const;;
 private:
     int weight_;
 };
