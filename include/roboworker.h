@@ -13,7 +13,6 @@ public:
     static boost::mutex serve_requests_mutex_;
     static boost::condition_variable available_requests_event;
     void work();
-    void log_shutdown();
     std::string name;
 private:
     std::deque<Request> served_requests;

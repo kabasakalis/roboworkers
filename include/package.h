@@ -23,7 +23,7 @@ public:
         set_finish_time();
         Packager::getInstance().available.notify_one();
         lock.unlock();
-        log();
+        log_task(name_, operationId_, id, product_.getName(), workload_, creation_time, start_time, finish_time);
     };
 
 private:

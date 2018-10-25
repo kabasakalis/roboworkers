@@ -16,33 +16,25 @@ void RoboWorker::work() {
             found = true;
             request = std::move(backoffice_requests_.front());
             backoffice_requests_.pop_front();
-            std::cout << "TOOK ONE" << std::endl;
-            Backoffice::processed_requests_count++;
-            std::cout << "Processed requests : " << Backoffice::processed_requests_count.load() << std::endl;
+            Backoffice::assigned_requests_count++;
+            log_roboworker_request_assignment(name,
+                                              request.get_operation().getId(),
+                                              request.get_operation().get_type_name(),
+                                              request.get_operation().get_product_name());
+
+            log_assigned_requests_count(Backoffice::assigned_requests_count, total_requests_count_);
             available_requests_event.notify_all();
         }
-        if (Backoffice::processed_requests_count < total_requests_count_) available_requests_event.wait(lock);
+        if (Backoffice::assigned_requests_count < total_requests_count_) available_requests_event.wait(lock);
         lock.unlock();
         if (found) {
             request.get_operation().process();
             served_requests.emplace_back(std::move(request));
         }
     }
-    log_shutdown();
-}
-
-void RoboWorker::log_shutdown() {
-
-    std::cout << "---------------------------------------------------------------"
-              << "---------------------------------------------------------------" << std::endl;
-    std::cout << name << " HAS FINISHED WORK AND IS SHUTTING DOWN. " << " | "
-              << "THREAD ID: " << boost::this_thread::get_id() << " | "
-              << "NUMBER OF REQUESTS SERVED: " << served_requests.size()
-              << std::endl;
-    std::cout << "---------------------------------------------------------------"
-              << "---------------------------------------------------------------" << std::endl;
+    log_roboworker_shutdown(name, boost::this_thread::get_id(), served_requests.size());
 }
 
 bool RoboWorker::pending_requests() {
-    return Backoffice::processed_requests_count < total_requests_count_;
+    return Backoffice::assigned_requests_count < total_requests_count_;
 }

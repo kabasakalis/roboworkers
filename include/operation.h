@@ -59,20 +59,17 @@ public:
         set_start_time();
         for (auto &task : tasks_) task->execute();
         set_finish_time();
-        log();
+        log_operation(id, type_name_, product_.getName(), total_workload_processed, creation_time, start_time,
+                      finish_time);
     };
 
+     std::string get_type_name() {
+        return type_name_;
+    };
 
-    void log() {
-        std::cout << "## OPERATION ## |  ID: " << id << " | "
-                   << type_name_ << " | "
-                  << " " << product_.getName() << " | "
-                  << "TOTAL WORKLOAD: " << total_workload_processed << "ms" << " | "
-                  << " CREATED AT: " << utc_format(creation_time) << " | "
-                  << "START TIME: " << utc_format(start_time) << " | "
-                  << "FINISH TIME: " << utc_format(finish_time) << " | " << std::endl;
-    }
-
+     std::string get_product_name() {
+        return product_.getName();
+    };
 
 private:
     Product product_;
@@ -80,6 +77,7 @@ private:
     std::string type_name_;
     std::vector<std::shared_ptr<Task>> tasks_;
     int total_workload_processed;
+
     int calculate_total_workload() {
         std::vector<int> temp(tasks_.size());
         std::transform(tasks_.begin(), tasks_.end(), temp.begin(),

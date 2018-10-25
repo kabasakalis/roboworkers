@@ -305,12 +305,12 @@ task.h
 /home/spiros/cpp/roboworkers/src/task.h
 
 /home/spiros/cpp/roboworkers/src/warehouse.cpp
-warehouse.h
-/home/spiros/cpp/roboworkers/src/warehouse.h
 iostream
 -
 thread
 -
+warehouse.h
+/home/spiros/cpp/roboworkers/src/warehouse.h
 roboworker.h
 -
 boost/thread.hpp

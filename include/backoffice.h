@@ -17,7 +17,7 @@ public:
     std::vector<std::string> lines_;
     const int workers_count;
     const int total_requests_count;
-    static std::atomic_int processed_requests_count;
+    static std::atomic_int assigned_requests_count;
 private:
     std::deque<Request> requests_;
     int read_workers_count_from_file(std::string filename);

@@ -1,20 +1,18 @@
-#include "warehouse.h"
 
 #include <iostream>
 #include <thread>
+#include "warehouse.h"
 #include <roboworker.h>
 #include <boost/thread.hpp>
 
 Warehouse::Warehouse(Backoffice &backoffice) :
         backoffice_(backoffice),
         workers_(initialize_workers()),
-        worker_threads_(initialize_threads()) {
-    std::cout << "Workers count: " << backoffice.workers_count << std::endl;
-
-}
+        worker_threads_(initialize_threads()) {}
 
 void Warehouse::wait_for_workers_to_finish() {
     for (auto &worker_thread : worker_threads_) worker_thread.join();
+    log_shutdown(backoffice_.total_requests_count, backoffice_.workers_count);
 }
 
 std::vector<RoboWorker> Warehouse::initialize_workers() {

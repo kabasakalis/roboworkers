@@ -9,7 +9,7 @@
 #include <numeric>
 #include "roboworker.h"
 
-std::atomic_int Backoffice::processed_requests_count{0};
+std::atomic_int Backoffice::assigned_requests_count{0};
 
 Backoffice::Backoffice(std::string filename) :
         lines_(read_requests_from_file(filename)),
@@ -60,8 +60,7 @@ void Backoffice::receive_batched_requests() {
             RoboWorker::available_requests_event.notify_one();
 
         }
-
-        std::cout << "Sleeping for : " << wait_for << std::endl;
+        log_backoffice_wait_between_batches(wait_for);
         usleep(wait_for * 1000);
         RoboWorker::available_requests_event.notify_all();
     }
