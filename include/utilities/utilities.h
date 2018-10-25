@@ -43,11 +43,18 @@ inline long timePointToLong(std::chrono::system_clock::time_point tp) {
     return tp.time_since_epoch().count();
 }
 
+/**
+ * @brief time_of_day<nanoseconds> Returns the timepoint as UTC time
+ */
 inline time_of_day<nanoseconds> utc_format(std::chrono::system_clock::time_point timepoint) {
     auto daypoint = floor < days > (timepoint);
     return make_time(timepoint - daypoint);
 }
 
+
+/**
+ * @brief Logs the current date and time
+ */
 inline void log_current_date_time() {
     std::string Months[] = {"January", "February", "March", "April", "May", "June",
                             "July", "August", "September", "October", "November", "December"};
@@ -65,7 +72,9 @@ inline void log_current_date_time() {
     std::cout << "The current time is  " << h << ":" << m << ":" << s << " UTC\n";
 }
 
-
+/**
+ * @brief log_startup Logs startup information
+ */
 inline void log_startup(int workers_count, int total_requests_count, unsigned long batches_count) {
 
     log_current_date_time();
@@ -76,6 +85,9 @@ inline void log_startup(int workers_count, int total_requests_count, unsigned lo
               << "Incoming Requests, handling starts now." << std::endl;
 }
 
+/**
+ * @brief log_operation Logs operation information
+ */
 inline void log_operation(std::string operation_id,
                           std::string name,
                           std::string product_name,
@@ -100,7 +112,7 @@ inline void log_operation(std::string operation_id,
 }
 
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_task Logs task information
 */
 inline void log_task(std::string name,
                      std::string operation_id,
@@ -122,7 +134,7 @@ inline void log_task(std::string name,
 
 
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_roboworker_shutdown Logs information about the roboworkers who have finished work and shut down.
 */
 inline void log_roboworker_shutdown(
         std::string name,
@@ -141,14 +153,14 @@ inline void log_roboworker_shutdown(
 
 
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_backoffice_wait_between_batches Logs for how long the backoffice will wait for the next batch of requests
 */
 inline void log_backoffice_wait_between_batches(int wait_for) {
     std::cout << "Backoffice waiting for " << wait_for << "ms until the next batch of requests." << std::endl;
 }
 
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_roboworker_request_assignment Logs information about the assignment of requests to roboworkers
 */
 inline void log_roboworker_request_assignment(std::string name,
                                               std::string operation_id,
@@ -163,7 +175,7 @@ inline void log_roboworker_request_assignment(std::string name,
 }
 
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_assigned_requests_count Logs assigned and remaining requests number
 */
 inline void log_assigned_requests_count(int assigned_requests_count,
                                               int total_requests_count){
@@ -172,7 +184,7 @@ inline void log_assigned_requests_count(int assigned_requests_count,
               << std::endl;
 }
 /**
-* @brief log_task Logs an operation following the required format
+* @brief log_shutdown  Logs shutdown information
 */
 inline void log_shutdown(int total_requests_count, int workers_count) {
 
@@ -184,6 +196,5 @@ inline void log_shutdown(int total_requests_count, int workers_count) {
     std::cout << "Goodbye." << std::endl;
 
 }
-
 
 #endif  // UTILITIES_H

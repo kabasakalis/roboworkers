@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o"
   "CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o"
   "CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o"
-  "CMakeFiles/roboworkers.dir/src/utilities/identifiable.cpp.o"
-  "CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o"
   "CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
   "roboworkers.pdb"
   "roboworkers"

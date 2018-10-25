@@ -12,28 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244f95fa-cbdd-4420-882d-94572a4acabf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/operations/operation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/operations/operation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/products/chair.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/products/chair.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/products/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/products/product.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/products/sofa.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/products/sofa.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/lift.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/lift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/move.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/move.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/package.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/package.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/packager.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/packager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/putdown.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/putdown.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/tasks/task.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tasks/task.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/operation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/operation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/chair.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/chair.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/product.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/sofa.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/sofa.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/lift.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/lift.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/move.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/move.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/package.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/packager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/packager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/putdown.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/putdown.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/task.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/roboworkers.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/roboworkers.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/roboworkers.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/backoffice.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/backoffice.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utilities/identifiable.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utilities/identifiable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utilities/timestampable.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utilities/timestampable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utilities/utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utilities/utilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backoffice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/backoffice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/identifiable.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/timestampable.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/-lpthread -lboost_thread -lboost_system-mt/" />
@@ -49,73 +48,32 @@
     <favorites_list name="roboworkers" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="putdown.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/tasks/putdown.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#62#91#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="packager.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/tasks/packager.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="packager.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/tasks/packager.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="putdown.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/tasks/putdown.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="42" selection-start-line="42" selection-end-line="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="package.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/tasks/package.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/tasks/package.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="backoffice.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/backoffice.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+              <folding>
+                <element signature="e#43#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backoffice.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/backoffice.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -157,9 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/operation.h" />
-        <option value="$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/FindBoost.cmake" />
-        <option value="$PROJECT_DIR$/include/identifiable.h" />
         <option value="$PROJECT_DIR$/include/request_blocking_queue.h" />
         <option value="$PROJECT_DIR$/include/timestampable.h" />
         <option value="$PROJECT_DIR$/include/product.h" />
@@ -180,9 +135,6 @@
         <option value="$PROJECT_DIR$/src/request_blocking_queue.cpp" />
         <option value="$PROJECT_DIR$/include/warehouse.h" />
         <option value="$PROJECT_DIR$/src/request.cpp" />
-        <option value="$PROJECT_DIR$/src/utilities/timestampable.cpp" />
-        <option value="$PROJECT_DIR$/include/backoffice.h" />
-        <option value="$PROJECT_DIR$/src/backoffice.cpp" />
         <option value="$PROJECT_DIR$/include/roboworker.h" />
         <option value="$PROJECT_DIR$/src/roboworker.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
@@ -208,6 +160,12 @@
         <option value="$PROJECT_DIR$/src/tasks/package.cpp" />
         <option value="$PROJECT_DIR$/include/tasks/packager.h" />
         <option value="$PROJECT_DIR$/src/tasks/packager.cpp" />
+        <option value="$PROJECT_DIR$/include/utilities/identifiable.h" />
+        <option value="$PROJECT_DIR$/src/utilities/timestampable.cpp" />
+        <option value="$PROJECT_DIR$/include/utilities/timestampable.h" />
+        <option value="$PROJECT_DIR$/include/utilities/utilities.h" />
+        <option value="$PROJECT_DIR$/include/backoffice.h" />
+        <option value="$PROJECT_DIR$/src/backoffice.cpp" />
       </list>
     </option>
   </component>
@@ -255,31 +213,7 @@
             <path>
               <item name="roboworkers" type="b2602c69:ProjectViewProjectNode" />
               <item name="roboworkers" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roboworkers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roboworkers" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roboworkers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roboworkers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roboworkers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roboworkers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roboworkers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roboworkers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,18 +278,18 @@
       <workItem from="1540323977330" duration="12809000" />
       <workItem from="1540379152338" duration="8616000" />
       <workItem from="1540417171001" duration="28468000" />
-      <workItem from="1540499293101" duration="4635000" />
+      <workItem from="1540499293101" duration="7019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343517000" />
+    <option name="totallyTimeSpent" value="345901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-14" width="1922" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48950276" visible="true" weight="0.12726304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48950276" visible="true" weight="0.12726304" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.30497238" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32928178" />
@@ -366,7 +300,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32928178" />
       <window_info id="Favorites" order="2" sideWeight="0.5104972" side_tool="true" weight="0.25239617" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3635359" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3635359" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -522,13 +456,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/6.2.0/bits/atomic_base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/llvm-3.8/lib/clang/3.8.0/include/stdatomic.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -607,28 +534,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/operation_type.h" />
     <entry file="file://$PROJECT_DIR$/include/request_blocking_queue.h" />
-    <entry file="file://$PROJECT_DIR$/include/utilities/utilities.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="165" column="52" lean-forward="true" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
-          <folding>
-            <element signature="e#41#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/request_blocking_queue.cpp" />
     <entry file="file://$PROJECT_DIR$/include/warehouse.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utilities/timestampable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#41#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -636,27 +549,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utilities/timestampable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/backoffice.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/backoffice.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -664,6 +559,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="e#37#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,13 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utilities/identifiable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,16 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/operations/operation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="e#387#419#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,27 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/tasks/package.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/putdown.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tasks/putdown.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#62#91#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,17 +717,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/tasks/packager.h">
+    <entry file="file://$PROJECT_DIR$/src/tasks/packager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/packager.cpp">
+    <entry file="file://$PROJECT_DIR$/include/tasks/package.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="405">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tasks/packager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/identifiable.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/timestampable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utilities/utilities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+          <folding>
+            <element signature="e#41#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/operations/operation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#387#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utilities/timestampable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utilities/identifiable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tasks/putdown.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#62#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/backoffice.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+          <folding>
+            <element signature="e#43#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backoffice.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

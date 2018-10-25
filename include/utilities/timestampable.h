@@ -1,3 +1,19 @@
+/**
+ * @file timestampable.h
+ *
+ * @brief  Timestampable class, subclasses inherit timestamps.
+ *
+ * @version 1.0
+ *
+ * @ingroup utilities
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
 
 #ifndef ROBOWORKERS_TIMESTAMPABLE_H
 #define ROBOWORKERS_TIMESTAMPABLE_H
@@ -10,10 +26,8 @@ class Timestampable {
 public:
     Timestampable() : creation_time(getTimestamp()) {};
 
-    virtual Timepoint get_create_time() const { return creation_time; }
-    virtual Timepoint get_start_time() const { return start_time; };
-    virtual Timepoint get_finish_time() const { return finish_time; };
     virtual void set_start_time() { start_time = getTimestamp(); };
+
     virtual void set_finish_time() { finish_time = getTimestamp(); };
 protected:
     Timepoint creation_time;

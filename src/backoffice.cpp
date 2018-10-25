@@ -1,3 +1,18 @@
+/**
+ * @file backoffice.cpp
+ *
+ * @brief Backoffice class, definition
+ *
+ * @version 1.0
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #include "backoffice.h"
 
 #include <fstream>
@@ -7,12 +22,22 @@
 
 std::atomic_int Backoffice::assigned_requests_count{0};
 
+/**
+ *
+ * Constructor initializes the number of workers, the total number of requests
+ * and the numbers of batches
+ *
+ * @param filename filename with the requests
+ */
 Backoffice::Backoffice(std::string filename) :
         lines_(read_requests_from_file(filename)),
         workers_count(read_workers_count_from_file(filename)),
         total_requests_count(calculate_total_requests()) {}
 
-void Backoffice::receive_batched_requests() {
+/**
+ * 
+ */
+void Backoffice::accept_requests() {
     int wait_for = 0;
 
     for (std::string &line : lines_) {

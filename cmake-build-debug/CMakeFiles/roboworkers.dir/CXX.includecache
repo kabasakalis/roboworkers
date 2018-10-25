@@ -278,12 +278,6 @@ tasks/putdown.h
 tasks/task.h
 /home/spiros/cpp/roboworkers/src/tasks/tasks/task.h
 
-/home/spiros/cpp/roboworkers/src/utilities/identifiable.cpp
-
-/home/spiros/cpp/roboworkers/src/utilities/timestampable.cpp
-utilities/timestampable.h
-/home/spiros/cpp/roboworkers/src/utilities/utilities/timestampable.h
-
 /home/spiros/cpp/roboworkers/src/warehouse.cpp
 iostream
 -

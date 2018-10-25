@@ -501,60 +501,6 @@ src/tasks/task.cpp.s:
 	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/tasks/task.cpp.s
 .PHONY : src/tasks/task.cpp.s
 
-src/utilities/identifiable.o: src/utilities/identifiable.cpp.o
-
-.PHONY : src/utilities/identifiable.o
-
-# target to build an object file
-src/utilities/identifiable.cpp.o:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/identifiable.cpp.o
-.PHONY : src/utilities/identifiable.cpp.o
-
-src/utilities/identifiable.i: src/utilities/identifiable.cpp.i
-
-.PHONY : src/utilities/identifiable.i
-
-# target to preprocess a source file
-src/utilities/identifiable.cpp.i:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/identifiable.cpp.i
-.PHONY : src/utilities/identifiable.cpp.i
-
-src/utilities/identifiable.s: src/utilities/identifiable.cpp.s
-
-.PHONY : src/utilities/identifiable.s
-
-# target to generate assembly for a file
-src/utilities/identifiable.cpp.s:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/identifiable.cpp.s
-.PHONY : src/utilities/identifiable.cpp.s
-
-src/utilities/timestampable.o: src/utilities/timestampable.cpp.o
-
-.PHONY : src/utilities/timestampable.o
-
-# target to build an object file
-src/utilities/timestampable.cpp.o:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o
-.PHONY : src/utilities/timestampable.cpp.o
-
-src/utilities/timestampable.i: src/utilities/timestampable.cpp.i
-
-.PHONY : src/utilities/timestampable.i
-
-# target to preprocess a source file
-src/utilities/timestampable.cpp.i:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.i
-.PHONY : src/utilities/timestampable.cpp.i
-
-src/utilities/timestampable.s: src/utilities/timestampable.cpp.s
-
-.PHONY : src/utilities/timestampable.s
-
-# target to generate assembly for a file
-src/utilities/timestampable.cpp.s:
-	$(MAKE) -f CMakeFiles/roboworkers.dir/build.make CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.s
-.PHONY : src/utilities/timestampable.cpp.s
-
 src/warehouse.o: src/warehouse.cpp.o
 
 .PHONY : src/warehouse.o
@@ -633,12 +579,6 @@ help:
 	@echo "... src/tasks/task.o"
 	@echo "... src/tasks/task.i"
 	@echo "... src/tasks/task.s"
-	@echo "... src/utilities/identifiable.o"
-	@echo "... src/utilities/identifiable.i"
-	@echo "... src/utilities/identifiable.s"
-	@echo "... src/utilities/timestampable.o"
-	@echo "... src/utilities/timestampable.i"
-	@echo "... src/utilities/timestampable.s"
 	@echo "... src/warehouse.o"
 	@echo "... src/warehouse.i"
 	@echo "... src/warehouse.s"

@@ -1,3 +1,20 @@
+/**
+ * @file identifiable.h
+ *
+ * @brief Identifiable class, subclasses inherit a unique id.
+ *
+ * @version 1.0
+ *
+ * @ingroup utilities
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #ifndef ROBOWORKERS_INDENTIFIABLE_H
 #define ROBOWORKERS_INDENTIFIABLE_H
 

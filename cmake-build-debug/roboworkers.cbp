@@ -208,12 +208,6 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/task.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/utilities/identifiable.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/utilities/timestampable.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/warehouse.cpp">
 			<Option target="roboworkers"/>
 		</Unit>

@@ -165,13 +165,6 @@ CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: ../include/utilities/timestampa
 CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: ../include/utilities/utilities.h
 CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: ../src/tasks/task.cpp
 
-CMakeFiles/roboworkers.dir/src/utilities/identifiable.cpp.o: ../src/utilities/identifiable.cpp
-
-CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o: ../include/date/date.h
-CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o: ../include/utilities/timestampable.h
-CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o: ../include/utilities/utilities.h
-CMakeFiles/roboworkers.dir/src/utilities/timestampable.cpp.o: ../src/utilities/timestampable.cpp
-
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/backoffice.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/date/date.h
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../include/operations/operation.h

@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
     log_startup(backoffice.workers_count, backoffice.total_requests_count, backoffice.lines_.size());
 
     Warehouse warehouse(backoffice);
-    backoffice.receive_batched_requests();
+    backoffice.accept_requests();
     warehouse.wait_for_workers_to_finish();
 
     return 0;

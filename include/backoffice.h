@@ -1,17 +1,30 @@
+/**
+ * @file backoffice.h
+ *
+ * @brief Backoffice class
+ *
+ * @version 1.0
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #ifndef BACKOFFICE_H
 #define BACKOFFICE_H
 
 #include <string>
-#include <functional>
 #include <vector>
 #include "request.h"
-
 
 class Backoffice {
 public:
     Backoffice(std::string filename);
     std::deque<Request>& get_request_queue() ;
-    void receive_batched_requests();
+    void accept_requests();
     std::vector<std::string> lines_;
     const int workers_count;
     const int total_requests_count;
