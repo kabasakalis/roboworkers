@@ -1,4 +1,4 @@
-#include "lift.h"
+#include "tasks/lift.h"
 
 //SOFA: 3 * number_of_seats * uniform[1,10) ms b. CHAIR: weight * uniform[1,10) ms
 const std::unordered_map<Product::Type, WorkloadCalculator> Lift::productType_To_WorkloadCalculator = {

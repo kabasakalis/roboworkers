@@ -2,9 +2,9 @@
 #ifndef ROBOWORKERS_PACKAGER_H
 #define ROBOWORKERS_PACKAGER_H
 
-#include "product.h"
-#include "task.h"
-#include "utilities.h"
+#include "products/product.h"
+#include "tasks/task.h"
+#include "utilities/utilities.h"
 
 class Packager {
 public:

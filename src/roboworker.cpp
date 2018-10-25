@@ -1,8 +1,5 @@
-
 #include <backoffice.h>
-#include <stdatomic.h>
 #include <warehouse.h>
-#include "roboworker.h"
 
 boost::mutex RoboWorker::serve_requests_mutex_;
 boost::condition_variable RoboWorker::available_requests_event;

@@ -3,7 +3,6 @@
 
 #include <vector>
 #include "request.h"
-#include "request_blocking_queue.h"
 #include "backoffice.h"
 
 #include <boost/thread/thread.hpp>

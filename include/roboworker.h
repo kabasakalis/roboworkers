@@ -2,6 +2,8 @@
 #ifndef ROBOWORKERS_ROBOWORKER_H
 #define ROBOWORKERS_ROBOWORKER_H
 
+#include "request.h"
+
 class RoboWorker {
 
 public:

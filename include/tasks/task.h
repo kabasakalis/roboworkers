@@ -4,9 +4,9 @@
 
 #include <unordered_map>
 #include <map>
-#include "identifiable.h"
-#include "timestampable.h"
-#include "product.h"
+#include "utilities/identifiable.h"
+#include "utilities/timestampable.h"
+#include "products/product.h"
 #include <unistd.h>
 #include <functional>
 
@@ -33,7 +33,7 @@ public:
         set_start_time();
         usleep(static_cast<useconds_t >(workload_) * 1000);
         set_finish_time();
-        log_task(name_, operationId_, id, product_.getName(), workload_, creation_time, start_time, finish_time);
+        log_task(name_, operationId_, id, product_.get_name(), workload_, creation_time, start_time, finish_time);
     };
 
     int get_workload() { return workload_; }

@@ -20,7 +20,7 @@ endif()
 INCLUDE_DIRECTORIES(include)
 
 FILE(GLOB_RECURSE HEADERS include/*.h)
-FILE(GLOB SOURCES src/*.cpp)
+FILE(GLOB_RECURSE SOURCES src/*.cpp)
 
 set(Boost_USE_STATIC_LIBS        ON)
 set(Boost_USE_MULTITHREADED      ON)

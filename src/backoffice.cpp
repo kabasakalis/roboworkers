@@ -1,12 +1,8 @@
 #include "backoffice.h"
-#include "operation.h"
 
 #include <fstream>
-#include <exception>
-#include <iostream>
 #include <boost/algorithm/string.hpp>
 #include <boost/lexical_cast.hpp>
-#include <numeric>
 #include "roboworker.h"
 
 std::atomic_int Backoffice::assigned_requests_count{0};

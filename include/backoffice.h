@@ -4,9 +4,7 @@
 #include <string>
 #include <functional>
 #include <vector>
-
 #include "request.h"
-#include "request_blocking_queue.h"
 
 
 class Backoffice {

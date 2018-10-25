@@ -1,8 +1,8 @@
 #ifndef REQUEST_H
 #define REQUEST_H
 
-#include "product.h"
-#include "operation.h"
+#include "products/product.h"
+#include "operations/operation.h"
 
 struct Request {
     Request(Product::Type product_type, Operation::Type operation_type)

@@ -91,9 +91,6 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/backoffice.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/chair.h">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/date/chrono_io.h">
 			<Option target="roboworkers"/>
 		</Unit>
@@ -121,55 +118,49 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/include/date/tz_private.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/identifiable.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/operations/operation.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/lift.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/products/chair.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/move.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/products/product.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/operation.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/operation_type.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/package.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/packager.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/product.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/product_type.h">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/putdown.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/products/sofa.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/request.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/request_blocking_queue.h">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/roboworker.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/sofa.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/lift.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/task.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/move.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/timestampable.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/package.h">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/include/utilities.h">
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/packager.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/putdown.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/tasks/task.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/utilities/identifiable.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/utilities/timestampable.h">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/include/utilities/utilities.h">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/include/warehouse.h">
@@ -178,40 +169,49 @@
 		<Unit filename="/home/spiros/cpp/roboworkers/src/backoffice.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/identifiable.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/lift.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/main.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/move.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/operations/operation.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/operation.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/products/chair.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/package.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/products/product.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/packager.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/products/sofa.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/product.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/putdown.cpp">
-			<Option target="roboworkers"/>
-		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/request_blocking_queue.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/request.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/roboworker.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
-		<Unit filename="/home/spiros/cpp/roboworkers/src/task.cpp">
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/lift.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/move.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/package.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/packager.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/putdown.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/tasks/task.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/utilities/identifiable.cpp">
+			<Option target="roboworkers"/>
+		</Unit>
+		<Unit filename="/home/spiros/cpp/roboworkers/src/utilities/timestampable.cpp">
 			<Option target="roboworkers"/>
 		</Unit>
 		<Unit filename="/home/spiros/cpp/roboworkers/src/warehouse.cpp">

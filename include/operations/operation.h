@@ -2,14 +2,14 @@
 #define ROBOWORKERS_OPERATION_H
 
 
-#include <utilities.h>
-#include <product.h>
-#include <timestampable.h>
+#include <utilities/utilities.h>
+#include <products/product.h>
+#include <utilities/timestampable.h>
 #include <deque>
-#include <lift.h>
-#include <move.h>
-#include <putdown.h>
-#include <package.h>
+#include <tasks/lift.h>
+#include <tasks/move.h>
+#include <tasks/putdown.h>
+#include <tasks/package.h>
 #include <numeric>
 
 class Operation : public Identifiable, Timestampable {
@@ -59,7 +59,7 @@ public:
         set_start_time();
         for (auto &task : tasks_) task->execute();
         set_finish_time();
-        log_operation(id, type_name_, product_.getName(), total_workload_processed, creation_time, start_time,
+        log_operation(id, type_name_, product_.get_name(), total_workload_processed, creation_time, start_time,
                       finish_time);
     };
 
@@ -68,7 +68,7 @@ public:
     };
 
      std::string get_product_name() {
-        return product_.getName();
+        return product_.get_name();
     };
 
 private:
