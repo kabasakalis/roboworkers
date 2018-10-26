@@ -11,14 +11,17 @@ The goal of this challenge is to design and implement the warehouse of a furnitu
 products are sofas and chairs . The warehouse employs n workers and a **single** (1) packager. The job of
 the packager is simply to package products while the workers can move , lift and put down products.
 The warehouse executes the following operations serving the factory’s back-office requests:
+
 **1. INBOUND : Import a product in the warehouse.**
 The necessary tasks (steps) to inbound a product are: LIFT → MOVE → PUT_DOWN → MOVE.
 A worker lifts the product, moves it to the appropriate position in the warehouse, puts it down and returns.
+
 **2. DELIVER : Deliver a product to a customer.**
 The tasks (steps) for delivering a product are: MOVE → LIFT → MOVE → PACKAGE → MOVE →
 PUT_DOWN → MOVE.
  A worker goes to the product, lifts it, moves it to the packager and the packager
 packs it. Then the worker moves it to the delivery point and puts the product down. Then she returns.
+
 Back-office requests may arrive at the warehouse at any moment. If no worker is available at the time, the
 requests are queued and executed as soon as possible.
 Each sofa product has a number of seats (integer), while each chair product has a weight (integer). The
@@ -60,7 +63,10 @@ And the operation report shall be in the following format:
 **#\# operation_id creation-time start-time finish-time**
 
 
+
 See ```utilities.h``` for provided log functionality).
+
+
 ----
 **Implementation Details**
 ----
