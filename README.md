@@ -48,12 +48,17 @@ corresponding operation. The formula that calculates the workload for each task 
 - SOFA: ```number_of_seats * uniform[1,5)``` ms
 - CHAIR: ```weight * uniform[1,5)``` ms
 
+
 Back-office wants to keep a comprehensive record on the state of the warehouse. As a result, the
 warehouse is required to log when the tasks and the operations start and finish.
 Task logs should follow the format below:
+
 **#- operation_id task_id start_time finish_time workload**
+
 And the operation report shall be in the following format:
+
 **#\# operation_id creation-time start-time finish-time**
+
 (see ```utilities.h``` for provided log functionality)
 ----
 **Implementation Details**
