@@ -6,7 +6,10 @@
 ![roboworkers](https://raw.githubusercontent.com/kabasakalis/roboworkers/master/roboworkers.jpg)
 ![roboworkers](https://raw.githubusercontent.com/kabasakalis/roboworkers/master/console_showcase.png)
 
-### Challenge requirements
+
+## Challenge requirements
+----
+
 The goal of this challenge is to design and implement the warehouse of a furniture factory. The stored
 products are sofas and chairs . The warehouse employs n workers and a **single** (1) packager. The job of
 the packager is simply to package products while the workers can move , lift and put down products.
