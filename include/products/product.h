@@ -29,17 +29,17 @@ public:
         NONE, SOFA, CHAIR
     };
 
-/**
- * Constructor
- *
- * @param productType Type enum
- * @param name string inentifier
- */
+    /**
+     * @brief Constructor
+     *
+     * @param productType Type enum
+     * @param name string inentifier
+     */
     Product(Product::Type productType, std::string name);
 
-/**
- *  Default constructor
- */
+    /**
+     * @brief Default constructor
+     */
     Product();
 
     virtual Type get_type() const;
@@ -52,6 +52,5 @@ protected:
     std::string name_;
     int workloadMultiplier_;
 };
-
 
 #endif //ROBOWORKERS_PRODUCT_H

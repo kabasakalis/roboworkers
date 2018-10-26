@@ -23,13 +23,16 @@
 class Sofa : public Product {
 public:
     /**
-     *  Default Constructor
+     * @brief Default Constructor
+     *
+     * @details Initializes the multiplier which contributes to the calculation of workload for every task,
+     *          the seats_count_, the product type enum and the name
      */
     Sofa();
 
     constexpr int getSeats() const;;
 private:
-    int seatsCount_;
+    int seats_count_;
 };
 
 #endif //ROBOWORKERS_SOFA_H

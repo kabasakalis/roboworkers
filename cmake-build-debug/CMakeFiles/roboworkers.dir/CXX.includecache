@@ -9,8 +9,6 @@
 ../include/backoffice.h
 string
 -
-functional
--
 vector
 -
 request.h

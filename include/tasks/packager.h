@@ -35,6 +35,15 @@ public:
 
     void operator=(Packager const&)  = delete;
 
+    /**
+     * @brief package package the provided workload
+     *
+     * @details Executes the package task for all roboworkers.
+     *          When packager is busy, roboworkers wait until they
+     *          are notified.
+     *
+     * @param workload  the workload passed from package task
+     */
     void package(int workload);
 
     bool is_busy{false};

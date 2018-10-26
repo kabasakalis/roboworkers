@@ -32,13 +32,27 @@ using WorkloadCalculator = std::function<int(Product)>;
 
 class Task : public Identifiable, public Timestampable {
 public:
+    /**
+     * @brief Default constructor
+     */
     Task();
 
+    /**
+     *
+     * @brief Constructor
+     *
+     * @param operationId the id of the operation that this task belongs to
+     * @param product     the product handled by the task
+     * @param workload    the workload of this task assoicated with the specific product
+     * @param name        identifier
+     */
     Task(std::string operationId,
-         Product &product,
+         Product& product,
          int workload, std::string name);
-
-    virtual void execute();;
+    /**
+     *  @brief Executes the task, sets start and finish timestamps and logs.
+     */
+    virtual void execute();
 
     int get_workload();
 

@@ -37,28 +37,27 @@ public:
     };
 
     /**
-     * Default Constructor
+     * @brief Default Constructor
      */
     Operation();
 
     /**
-     * Constructor
+     * @brief Constructor
      *
-     * Using a container of smart pointers to store tasks,
-     * so that  polymorphism can be used when iterating over them
-     * and calling Task::execute. The overriden and specialized execute
-     * method will be called for every subclass of Task. For example,
-     * the Package task has a specialized execute method that delegates
-     * to singleton's Packager::package method.
+     * @detais Using a container of smart pointers to store tasks,
+     *         so that  polymorphism can be used when iterating over them
+     *         and calling Task::execute. The overriden and specialized execute
+     *         method will be called for every subclass of Task. For example,
+     *         the Package task has a specialized execute method that delegates
+     *         to singleton's Packager::package method.
      *
-     *
-     * @param type  the operation type enum
+     * @param type    the operation type enum
      * @param product the product processed by the operation
      */
     Operation(Type type, Product product);
 
     /**
-     * Process the operation, calling execute in every task sequentially.
+     *  @brief process Process the operation, calling execute for every task sequentially.
      */
     void process();
 
@@ -78,7 +77,7 @@ private:
     int total_workload_processed;
 
     /**
-     * Calculate the sum of workloads for all tasks.
+     * @brief calculate_total_workload Calculate the sum of workloads for all tasks.
      */
     int calculate_total_workload();
 };

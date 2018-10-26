@@ -28,4 +28,4 @@ set(Boost_USE_STATIC_RUNTIME    OFF)
 find_package(Boost REQUIRED COMPONENTS thread system)
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
-target_link_libraries(${PROJECT_NAME}  ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY}   )
+target_link_libraries(${PROJECT_NAME}  ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY})

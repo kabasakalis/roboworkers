@@ -16,13 +16,7 @@
  */
 
 #include "tasks/packager.h"
-/**
- * Executes the package task for all roboworkers.
- * When packager is busy, roboworkers wait until they
- * are notified.
- *
- * @param workload  the workload passed from package task
- */
+
 void Packager::package(int workload) {
     is_busy = true;
     usleep(static_cast<useconds_t>(workload) * 1000);

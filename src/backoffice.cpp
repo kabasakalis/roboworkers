@@ -22,30 +22,23 @@
 
 std::atomic_int Backoffice::assigned_requests_count{0};
 
-/**
- *
- * Constructor initializes the number of workers, the total number of requests
- * and the numbers of batches
- *
- * @param filename filename with the requests
- */
+
 Backoffice::Backoffice(std::string filename) :
         lines_(read_requests_from_file(filename)),
         workers_count(read_workers_count_from_file(filename)),
-        total_requests_count(calculate_total_requests()) {}
+        total_requests_count(calculate_total_requests()) {
+    log_startup(workers_count, total_requests_count, lines_.size());
+}
 
-/**
- * 
- */
 void Backoffice::accept_requests() {
     int wait_for = 0;
 
-    for (std::string &line : lines_) {
+    for (std::string& line : lines_) {
         std::vector<Request> requests;
         std::vector<std::string> fields = splitStr(line, " ");
         wait_for = boost::lexical_cast<int>(fields.back());
         fields.pop_back();
-        for (std::string &s : fields) {
+        for (std::string& s : fields) {
             if (s.size() != 2) {
                 std::cout << s << std::endl;
                 throw std::runtime_error("Malformed input file.");

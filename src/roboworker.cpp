@@ -1,3 +1,18 @@
+/**
+ * @file roboworker.cpp
+ *
+ * @brief Roboworker class, definition
+ *
+ * @version 1.0
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #include <backoffice.h>
 #include <warehouse.h>
 

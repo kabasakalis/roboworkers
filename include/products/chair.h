@@ -23,9 +23,12 @@
 class Chair : public Product {
 public:
     /**
-     * Default Constructor
+     * @brief Default Constructor
+     *
+     * @details Initializes the multiplier which contributes to the calculation of workload for every task,
+     *          the weight, the product type enum and the name
      */
-    Chair();;
+    Chair();
 
     constexpr int getWeight() const;;
 private:

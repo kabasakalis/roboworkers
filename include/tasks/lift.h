@@ -25,9 +25,22 @@
 
 class Lift : public Task {
 public:
-    Lift(const std::string& operationId, Product& product);;
+
+    /**
+     * @brief Constructor
+     *
+     * @param operationId  the operation id that this lift instance belongs to
+     * @param product      the product handled by the lift
+     */
+    Lift(const std::string& operationId, Product& product);
 
 private:
+    /**
+     * @brief Maps every product type to the function that calculates the workload for the lift task.
+     *
+     * @details  SOFA: 3 * number_of_seats * uniform[1,10) ms b. CHAIR: weight * uniform[1,10) ms
+     *
+     */
     const static std::unordered_map<Product::Type, WorkloadCalculator> product_type_to_workload_calculator;
 
 };

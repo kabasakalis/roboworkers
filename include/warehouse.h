@@ -1,41 +1,66 @@
+/**
+ * @file warehouse.h
+ *
+ * @brief Warehouse class
+ *
+ * @version 1.0
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
+
 #ifndef WAREHOUSE_H
 #define WAREHOUSE_H
 
 #include <vector>
 #include "request.h"
 #include "backoffice.h"
-
 #include <boost/thread/thread.hpp>
 #include "roboworker.h"
 
 /**
  * @brief The Warehouse class models the Warehouse
  *
- *      *** COMPLETE CODE AT WILL ***
  */
 class Warehouse {
 public:
-    Warehouse(Backoffice &backoffice);
-
     /**
-     * @brief onNewRequests This method is called when new requests arrive from
-     * the back-office.
-     * @param new_requests The list of new requests
+     * @brief Constructor
+     * @param backoffice  a reference to the backoffice
      */
-    void onNewRequests(std::vector<Request> &new_requests);
+    Warehouse(Backoffice& backoffice);
+
 
     /**
-     * @brief wait Waits until all the requests are handled.
+     * @brief wait_for_workers_to_finish Waits until all the requests are handled by the roboworkers.
+     *
      */
     void wait_for_workers_to_finish();
 
 private:
-    Backoffice &backoffice_;
+    Backoffice& backoffice_;
     std::vector<RoboWorker> workers_;
     std::vector<boost::thread> worker_threads_;
 
+    /**
+     * @brief   initialize_workers
+     *
+     * @details Initializes as many roboworkers as specified in the file
+     *          used to initialize the backoffice and stores them in the member
+     *          vector variable workers_.
+     */
     std::vector<RoboWorker> initialize_workers();
 
+    /**
+     * @brief   initialize_threads
+     *
+     * @details Initializes a thread for every roboworker so that
+     *          they can process the operations in parallel.
+     */
     std::vector<boost::thread> initialize_threads();
 };
 

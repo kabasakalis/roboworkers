@@ -1,3 +1,17 @@
+/**
+ * @file warehouse.cpp
+ *
+ * @brief Warehouse class, definition
+ *
+ * @version 1.0
+ *
+ * @author Spiros Kabasakalis
+ * Contact: kabasakalis@gmail.com
+ *
+ * @copyright 2018 Spiros Kabasakalis
+ * This code is licensed under MIT license (see LICENSE for details)
+ *
+ */
 
 #include <iostream>
 #include <thread>
@@ -28,7 +42,6 @@ std::vector<boost::thread> Warehouse::initialize_threads() {
     std::vector<boost::thread> worker_threads;
     for (int i = 0; i < backoffice_.workers_count; ++i) {
         worker_threads.emplace_back(boost::thread(&RoboWorker::work, &workers_[i]));
-        boost::thread a;
     }
     return std::move(worker_threads);
 }
