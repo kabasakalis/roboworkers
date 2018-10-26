@@ -59,11 +59,14 @@ And the operation report shall be in the following format:
 
 **#\# operation_id creation-time start-time finish-time**
 
-(see ```utilities.h``` for provided log functionality)
+
+See ```utilities.h``` for provided log functionality).
 ----
 **Implementation Details**
 ----
+
 **Data input**
+
 To simulate the back-office requests, we provide the BackOffice class, that parses the input file and
 generates warehouse Requests. The input txt file has the
 following format:
