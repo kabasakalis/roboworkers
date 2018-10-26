@@ -19,8 +19,8 @@
 
 int main(int argc, char **argv) {
     srand(time(NULL));
-
-    std::string filename = argc > 1 ? argv[1] : "../data.txt";
+    // If you are using CLion IDE set the file path as "../data.txt"
+    std::string filename = argc > 1 ? argv[1] : "data.txt";
     Backoffice backoffice(filename);
     Warehouse warehouse(backoffice);
     backoffice.accept_requests();

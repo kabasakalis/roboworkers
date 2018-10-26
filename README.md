@@ -1,10 +1,19 @@
-
 #    Roboworkers
 ----
 ### C++  single producer and multiple consumers multithreading demonstration
 ##### Based on requirements of a coding challenge.
 ![roboworkers](https://raw.githubusercontent.com/kabasakalis/roboworkers/master/roboworkers.jpg)
 ![roboworkers](https://raw.githubusercontent.com/kabasakalis/roboworkers/master/console_showcase.png)
+
+
+## Build Debug Instructions
+- To configure the CMake project, run at the root directory:
+```cmake -DCMAKE_BUILD_TYPE=Debug  ./cmake-build-debug```
+- To build the project, run at the root of the directory:
+ ```cmake --build ./cmake-build-debug --target roboworkers -- -j 2```
+- To run the executable, run at the root of the directory:
+```./cmake-build-debug/roboworkers```
+----
 
 
 ## Challenge requirements

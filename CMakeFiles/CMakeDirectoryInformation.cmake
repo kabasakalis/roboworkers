@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/spiros/cpp/roboworkers")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/spiros/cpp/roboworkers/cmake-build-debug")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/spiros/cpp/roboworkers")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

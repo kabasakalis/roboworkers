@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/spiros/cpp/roboworkers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/spiros/cpp/roboworkers/cmake-build-debug
+CMAKE_BINARY_DIR = /home/spiros/cpp/roboworkers
 
 # Include any dependencies generated for this target.
 include CMakeFiles/roboworkers.dir/depend.make
@@ -58,8 +58,8 @@ include CMakeFiles/roboworkers.dir/progress.make
 include CMakeFiles/roboworkers.dir/flags.make
 
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: ../src/backoffice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/roboworkers.dir/src/backoffice.cpp.o"
+CMakeFiles/roboworkers.dir/src/backoffice.cpp.o: src/backoffice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/roboworkers.dir/src/backoffice.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/backoffice.cpp.o -c /home/spiros/cpp/roboworkers/src/backoffice.cpp
 
 CMakeFiles/roboworkers.dir/src/backoffice.cpp.i: cmake_force
@@ -82,8 +82,8 @@ CMakeFiles/roboworkers.dir/src/backoffice.cpp.o.provides.build: CMakeFiles/robow
 
 
 CMakeFiles/roboworkers.dir/src/main.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/roboworkers.dir/src/main.cpp.o"
+CMakeFiles/roboworkers.dir/src/main.cpp.o: src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/roboworkers.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/main.cpp.o -c /home/spiros/cpp/roboworkers/src/main.cpp
 
 CMakeFiles/roboworkers.dir/src/main.cpp.i: cmake_force
@@ -106,8 +106,8 @@ CMakeFiles/roboworkers.dir/src/main.cpp.o.provides.build: CMakeFiles/roboworkers
 
 
 CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o: ../src/operations/operation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o"
+CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o: src/operations/operation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o -c /home/spiros/cpp/roboworkers/src/operations/operation.cpp
 
 CMakeFiles/roboworkers.dir/src/operations/operation.cpp.i: cmake_force
@@ -130,8 +130,8 @@ CMakeFiles/roboworkers.dir/src/operations/operation.cpp.o.provides.build: CMakeF
 
 
 CMakeFiles/roboworkers.dir/src/products/chair.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/products/chair.cpp.o: ../src/products/chair.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/roboworkers.dir/src/products/chair.cpp.o"
+CMakeFiles/roboworkers.dir/src/products/chair.cpp.o: src/products/chair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/roboworkers.dir/src/products/chair.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/products/chair.cpp.o -c /home/spiros/cpp/roboworkers/src/products/chair.cpp
 
 CMakeFiles/roboworkers.dir/src/products/chair.cpp.i: cmake_force
@@ -154,8 +154,8 @@ CMakeFiles/roboworkers.dir/src/products/chair.cpp.o.provides.build: CMakeFiles/r
 
 
 CMakeFiles/roboworkers.dir/src/products/product.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/products/product.cpp.o: ../src/products/product.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/roboworkers.dir/src/products/product.cpp.o"
+CMakeFiles/roboworkers.dir/src/products/product.cpp.o: src/products/product.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/roboworkers.dir/src/products/product.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/products/product.cpp.o -c /home/spiros/cpp/roboworkers/src/products/product.cpp
 
 CMakeFiles/roboworkers.dir/src/products/product.cpp.i: cmake_force
@@ -178,8 +178,8 @@ CMakeFiles/roboworkers.dir/src/products/product.cpp.o.provides.build: CMakeFiles
 
 
 CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o: ../src/products/sofa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o"
+CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o: src/products/sofa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o -c /home/spiros/cpp/roboworkers/src/products/sofa.cpp
 
 CMakeFiles/roboworkers.dir/src/products/sofa.cpp.i: cmake_force
@@ -202,8 +202,8 @@ CMakeFiles/roboworkers.dir/src/products/sofa.cpp.o.provides.build: CMakeFiles/ro
 
 
 CMakeFiles/roboworkers.dir/src/request.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/request.cpp.o: ../src/request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/roboworkers.dir/src/request.cpp.o"
+CMakeFiles/roboworkers.dir/src/request.cpp.o: src/request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/roboworkers.dir/src/request.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/request.cpp.o -c /home/spiros/cpp/roboworkers/src/request.cpp
 
 CMakeFiles/roboworkers.dir/src/request.cpp.i: cmake_force
@@ -226,8 +226,8 @@ CMakeFiles/roboworkers.dir/src/request.cpp.o.provides.build: CMakeFiles/robowork
 
 
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: ../src/roboworker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/roboworkers.dir/src/roboworker.cpp.o"
+CMakeFiles/roboworkers.dir/src/roboworker.cpp.o: src/roboworker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/roboworkers.dir/src/roboworker.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/roboworker.cpp.o -c /home/spiros/cpp/roboworkers/src/roboworker.cpp
 
 CMakeFiles/roboworkers.dir/src/roboworker.cpp.i: cmake_force
@@ -250,8 +250,8 @@ CMakeFiles/roboworkers.dir/src/roboworker.cpp.o.provides.build: CMakeFiles/robow
 
 
 CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o: ../src/tasks/lift.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o: src/tasks/lift.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/lift.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.i: cmake_force
@@ -274,8 +274,8 @@ CMakeFiles/roboworkers.dir/src/tasks/lift.cpp.o.provides.build: CMakeFiles/robow
 
 
 CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o: ../src/tasks/move.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o: src/tasks/move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/move.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/move.cpp.i: cmake_force
@@ -298,8 +298,8 @@ CMakeFiles/roboworkers.dir/src/tasks/move.cpp.o.provides.build: CMakeFiles/robow
 
 
 CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o: ../src/tasks/package.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o: src/tasks/package.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/package.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/package.cpp.i: cmake_force
@@ -322,8 +322,8 @@ CMakeFiles/roboworkers.dir/src/tasks/package.cpp.o.provides.build: CMakeFiles/ro
 
 
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: ../src/tasks/packager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o: src/tasks/packager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/packager.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.i: cmake_force
@@ -346,8 +346,8 @@ CMakeFiles/roboworkers.dir/src/tasks/packager.cpp.o.provides.build: CMakeFiles/r
 
 
 CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o: ../src/tasks/putdown.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o: src/tasks/putdown.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/putdown.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.i: cmake_force
@@ -370,8 +370,8 @@ CMakeFiles/roboworkers.dir/src/tasks/putdown.cpp.o.provides.build: CMakeFiles/ro
 
 
 CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: ../src/tasks/task.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o"
+CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o: src/tasks/task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o -c /home/spiros/cpp/roboworkers/src/tasks/task.cpp
 
 CMakeFiles/roboworkers.dir/src/tasks/task.cpp.i: cmake_force
@@ -394,8 +394,8 @@ CMakeFiles/roboworkers.dir/src/tasks/task.cpp.o.provides.build: CMakeFiles/robow
 
 
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: CMakeFiles/roboworkers.dir/flags.make
-CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: ../src/warehouse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
+CMakeFiles/roboworkers.dir/src/warehouse.cpp.o: src/warehouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/roboworkers.dir/src/warehouse.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roboworkers.dir/src/warehouse.cpp.o -c /home/spiros/cpp/roboworkers/src/warehouse.cpp
 
 CMakeFiles/roboworkers.dir/src/warehouse.cpp.i: cmake_force
@@ -457,7 +457,7 @@ roboworkers: CMakeFiles/roboworkers.dir/build.make
 roboworkers: /usr/local/lib/libboost_thread.a
 roboworkers: /usr/local/lib/libboost_system.a
 roboworkers: CMakeFiles/roboworkers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable roboworkers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spiros/cpp/roboworkers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable roboworkers"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roboworkers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -488,6 +488,6 @@ CMakeFiles/roboworkers.dir/clean:
 .PHONY : CMakeFiles/roboworkers.dir/clean
 
 CMakeFiles/roboworkers.dir/depend:
-	cd /home/spiros/cpp/roboworkers/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers/cmake-build-debug /home/spiros/cpp/roboworkers/cmake-build-debug /home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spiros/cpp/roboworkers && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers /home/spiros/cpp/roboworkers/CMakeFiles/roboworkers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roboworkers.dir/depend
 
