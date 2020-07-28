@@ -30,7 +30,7 @@ public:
      */
     Chair();
 
-    constexpr int getWeight() const;;
+    constexpr int getWeight() const;
 private:
     int weight_;
 };

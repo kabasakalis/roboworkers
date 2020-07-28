@@ -21,4 +21,4 @@ Sofa::Sofa() : Product(Product::Type::SOFA, stringify(Product::Type::SOFA)), sea
     workloadMultiplier_ = seats_count_;
 }
 
-constexpr int Sofa::getSeats() const { return seats_count_; }
+ int Sofa::getSeats() const { return seats_count_; }

@@ -1,3 +1,0 @@
-/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/spiros/cpp/roboworkers/cmake-build-debug/CMakeFiles/roboworkers.dir
